@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="automationGlow" x1="14" y1="12" x2="50" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B9ECFF" />
+      <stop offset="1" stop-color="#67CFFF" />
+    </linearGradient>
+  </defs>
+  <rect x="12" y="12" width="40" height="40" rx="14" fill="rgba(7,17,30,0.0)" />
+  <path d="M20 40H28L32 24L36 34H44" stroke="url(#automationGlow)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+  <circle cx="20" cy="40" r="3" fill="#F3F7FF" />
+  <circle cx="32" cy="24" r="3.5" fill="#F3F7FF" />
+  <circle cx="44" cy="34" r="3" fill="#F3F7FF" />
+  <path d="M45 20L49 16" stroke="#F3F7FF" stroke-linecap="round" stroke-width="2.5" />
+  <path d="M49 20V16H45" stroke="#F3F7FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" />
+</svg>

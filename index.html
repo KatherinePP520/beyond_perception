@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beyond Perception | Intelligent Systems for Real Business</title>
+    <meta
+      name="description"
+      content="Beyond Perception designs AI-powered automation, workflow intelligence, and custom business systems for growing companies."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;800&family=Patrick+Hand&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./assets/favion.png" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <div class="ambient ambient-a"></div>
+      <div class="ambient ambient-b"></div>
+      <div class="scanline"></div>
+      <canvas class="particle-field" aria-hidden="true"></canvas>
+
+      <header class="topbar" data-topbar>
+        <a class="brand" href="#hero" data-i18n-attr="aria-label:brand.homeAria">
+          <img class="brand-logo" src="./assets/beyond-perception-logo-white.png" alt="Beyond Perception" />
+          <span class="sr-only" data-i18n="brand.name">Beyond Perception</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-label="Open menu"
+          data-menu-toggle
+          data-i18n-attr="aria-label:navigation.menuAria"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav" data-nav>
+          <a href="#solutions" data-i18n="navigation.solutions">Solutions</a>
+          <a href="#services" data-i18n="navigation.services">Services</a>
+          <a href="#industries" data-i18n="navigation.industries">Industries</a>
+          <a href="#work" data-i18n="navigation.work">Work</a>
+          <a href="#about" data-i18n="navigation.about">About</a>
+          <a href="#contact" data-i18n="navigation.contact">Contact</a>
+          <div class="language-switch" role="group" aria-label="Language switcher" data-i18n-attr="aria-label:language.switcher">
+            <button class="language-pill is-active" type="button" data-lang-toggle="en">EN</button>
+            <button class="language-pill" type="button" data-lang-toggle="zh">中</button>
+          </div>
+          <a class="button button-ghost nav-button" href="#contact" data-i18n="navigation.demo">Book a Demo</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero section" id="hero">
+          <div class="hero-copy reveal">
+            <p class="eyebrow" data-i18n="hero.eyebrow">AI Automation / Workflow Intelligence / Custom Systems</p>
+            <h1 data-i18n="hero.title">Custom AI solutions that actually run your business.</h1>
+            <p class="hero-text" data-i18n="hero.body">
+              We help growing businesses automate operations, streamline workflows, and build
+              AI-enabled systems that reduce manual work and scale with real-world execution.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#contact" data-i18n="hero.primaryCta">Book a Demo</a>
+              <a class="button button-secondary" href="#solutions" data-i18n="hero.secondaryCta">Explore Solutions</a>
+            </div>
+            <dl class="hero-metrics">
+              <div>
+                <dt data-i18n="hero.metrics.time">Workflow Time Saved</dt>
+                <dd><span data-counter="68">0</span>%</dd>
+              </div>
+              <div>
+                <dt data-i18n="hero.metrics.platforms">Connected Platforms</dt>
+                <dd><span data-counter="24">0</span>+</dd>
+              </div>
+              <div>
+                <dt data-i18n="hero.metrics.launch">Launch Window</dt>
+                <dd><span data-counter="6">0</span> <span data-i18n="hero.metrics.launchUnit">Weeks</span></dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="control-core">
+              <div class="core-grid"></div>
+              <div class="core-ring ring-a"></div>
+              <div class="core-ring ring-b"></div>
+              <div class="core-center">
+                <span class="core-label" data-i18n="hero.core.label">AI CONTROL CORE</span>
+                <strong data-i18n="hero.core.title">Operational Intelligence</strong>
+                <p data-i18n="hero.core.body">Reviews / Approvals / Dashboards / Messaging / Integrations</p>
+              </div>
+              <div class="orbit orbit-a">
+                <span data-i18n="hero.orbits.reviews">Review Automation</span>
+              </div>
+              <div class="orbit orbit-b">
+                <span data-i18n="hero.orbits.ops">Internal Ops</span>
+              </div>
+              <div class="orbit orbit-c">
+                <span data-i18n="hero.orbits.portals">Smart Portals</span>
+              </div>
+              <div class="orbit orbit-d">
+                <span data-i18n="hero.orbits.assistants">AI Assistants</span>
+              </div>
+              <div class="signal signal-a"></div>
+              <div class="signal signal-b"></div>
+              <div class="signal signal-c"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-grid" id="solutions">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="capabilities.eyebrow">Core Capabilities</p>
+            <h2 data-i18n="capabilities.title">Built for companies that need systems, not software clutter.</h2>
+            <p data-i18n="capabilities.body">
+              Four focused capabilities turn fragmented tools and repetitive workflows into
+              intelligent operating systems.
+            </p>
+          </div>
+
+          <div class="capability-grid">
+            <article class="panel capability-card reveal">
+              <span class="panel-icon">
+                <img src="./assets/icon-automation.svg" alt="" aria-hidden="true" />
+              </span>
+              <h3 data-i18n="capabilities.cards.automation.title">AI Automation</h3>
+              <p data-i18n="capabilities.cards.automation.body">Automate repetitive business tasks, triggers, notifications, approvals, and follow-up logic.</p>
+            </article>
+            <article class="panel capability-card reveal">
+              <span class="panel-icon">
+                <img src="./assets/icon-systems.svg" alt="" aria-hidden="true" />
+              </span>
+              <h3 data-i18n="capabilities.cards.systems.title">Custom Business Systems</h3>
+              <p data-i18n="capabilities.cards.systems.body">Design internal tools for CRM, HR, approvals, client workflows, dashboards, and operating visibility.</p>
+            </article>
+            <article class="panel capability-card reveal">
+              <span class="panel-icon">
+                <img src="./assets/icon-apps.svg" alt="" aria-hidden="true" />
+              </span>
+              <h3 data-i18n="capabilities.cards.apps.title">Smart Apps</h3>
+              <p data-i18n="capabilities.cards.apps.body">Ship customer and team-facing portals, web apps, and mobile-ready experiences with clear business purpose.</p>
+            </article>
+            <article class="panel capability-card reveal">
+              <span class="panel-icon">
+                <img src="./assets/icon-integration.svg" alt="" aria-hidden="true" />
+              </span>
+              <h3 data-i18n="capabilities.cards.integration.title">Integration Design</h3>
+              <p data-i18n="capabilities.cards.integration.body">Connect platforms, consolidate data, and turn isolated tasks into one coherent workflow chain.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section process-section" id="services">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="process.eyebrow">Execution Model</p>
+            <h2 data-i18n="process.title">From manual work to intelligent operations.</h2>
+            <p data-i18n="process.body">We keep the process commercial, structured, and measurable from discovery to rollout.</p>
+          </div>
+
+          <div class="process-line">
+            <article class="process-step reveal">
+              <span class="process-index">01</span>
+              <h3 data-i18n="process.steps.understand.title">Understand your workflow</h3>
+              <p data-i18n="process.steps.understand.body">Map current operations, identify manual bottlenecks, and isolate high-value automation targets.</p>
+            </article>
+            <article class="process-step reveal">
+              <span class="process-index">02</span>
+              <h3 data-i18n="process.steps.design.title">Design the automation logic</h3>
+              <p data-i18n="process.steps.design.body">Define rules, triggers, handoffs, and exception handling that fit how the business already runs.</p>
+            </article>
+            <article class="process-step reveal">
+              <span class="process-index">03</span>
+              <h3 data-i18n="process.steps.build.title">Build your custom solution</h3>
+              <p data-i18n="process.steps.build.body">Develop the app, workflow, dashboards, integrations, or assistant required for execution.</p>
+            </article>
+            <article class="process-step reveal">
+              <span class="process-index">04</span>
+              <h3 data-i18n="process.steps.scale.title">Launch, optimize, scale</h3>
+              <p data-i18n="process.steps.scale.body">Deploy, observe adoption, refine edge cases, and extend automation to adjacent business functions.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section systems-section">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="systems.eyebrow">Solution Views</p>
+            <h2 data-i18n="systems.title">Scenario-based systems, not generic feature lists.</h2>
+            <p data-i18n="systems.body">Each solution area is framed around a concrete operational use case and the workflow behind it.</p>
+          </div>
+
+          <div class="systems-layout reveal">
+            <div class="systems-nav" role="tablist" data-i18n-attr="aria-label:systems.tablistAria">
+              <button class="system-tab is-active" type="button" role="tab" aria-selected="true" data-system="reviews" data-i18n="systems.tabs.reviews">Review Automation</button>
+              <button class="system-tab" type="button" role="tab" aria-selected="false" data-system="operations" data-i18n="systems.tabs.operations">Internal Operations</button>
+              <button class="system-tab" type="button" role="tab" aria-selected="false" data-system="approval" data-i18n="systems.tabs.approval">Approval Workflows</button>
+              <button class="system-tab" type="button" role="tab" aria-selected="false" data-system="portals" data-i18n="systems.tabs.portals">Smart Portals</button>
+              <button class="system-tab" type="button" role="tab" aria-selected="false" data-system="assistant" data-i18n="systems.tabs.assistant">AI Assistants</button>
+            </div>
+
+            <div class="panel systems-display">
+              <div class="system-pane is-active" data-pane="reviews">
+                <div class="display-header">
+                  <span class="display-chip" data-i18n="systems.panes.reviews.chip">Customer Communication</span>
+                  <h3 data-i18n="systems.panes.reviews.title">Automated review collection with internal escalation logic</h3>
+                </div>
+                <div class="console-grid">
+                  <div class="console-card">
+                    <strong data-i18n="systems.panes.reviews.card1.label">Trigger</strong>
+                    <p data-i18n="systems.panes.reviews.card1.body">Order completed</p>
+                  </div>
+                  <div class="console-card">
+                    <strong data-i18n="systems.panes.reviews.card2.label">Workflow</strong>
+                    <p data-i18n="systems.panes.reviews.card2.body">Message sent, sentiment scored, follow-up routed</p>
+                  </div>
+                  <div class="console-card emphasis">
+                    <strong data-i18n="systems.panes.reviews.card3.label">Protect the brand</strong>
+                    <p data-i18n="systems.panes.reviews.card3.body">Low-rating responses are diverted to internal recovery before public posting.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="system-pane" data-pane="operations">
+                <div class="display-header">
+                  <span class="display-chip" data-i18n="systems.panes.operations.chip">Operations Control</span>
+                  <h3 data-i18n="systems.panes.operations.title">Internal workflows that remove admin friction across the team</h3>
+                </div>
+                <div class="console-grid">
+                  <div class="console-card">
+                    <strong data-i18n="systems.panes.operations.card1.label">Modules</strong>
+                    <p data-i18n="systems.panes.operations.card1.body">Attendance, timesheets, notifications, reporting</p>
+                  </div>
+                  <div class="console-card">
+                    <strong data-i18n="systems.panes.operations.card2.label">Visibility</strong>
+                    <p data-i18n="systems.panes.operations.card2.body">Live status boards replace scattered updates and manual chasing.</p>
+                  </div>
+                  <div class="console-card emphasis">
+                    <strong data-i18n="systems.panes.operations.card3.label">Outcome</strong>
+                    <p data-i18n="systems.panes.operations.card3.body">Faster approvals, cleaner records, fewer dropped internal tasks.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="system-pane" data-pane="approval">
+                <div class="display-header">
+                  <span class="display-chip" data-i18n="systems.panes.approval.chip">Approval Logic</span>
+                  <h3 data-i18n="systems.panes.approval.title">Structured routing for leave, budgets, onboarding, and operational sign-off</h3>
+                </div>
+                <div class="console-grid">
+                  <div class="console-card">
+                    <strong data-i18n="systems.panes.approval.card1.label">Routing</strong>
+                    <p data-i18n="systems.panes.approval.card1.body">Rules-based approval chains with escalation thresholds</p>
+                  </div>
+                  <div class="console-card">
+                    <strong data-i18n="systems.panes.approval.card2.label">Audit Trail</strong>
+                    <p data-i18n="systems.panes.approval.card2.body">Every handoff, decision, and exception stays visible in one place.</p>
+                  </div>
+                  <div class="console-card emphasis">
+                    <strong data-i18n="systems.panes.approval.card3.label">Outcome</strong>
+                    <p data-i18n="systems.panes.approval.card3.body">Manual follow-up drops while accountability improves across departments.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="system-pane" data-pane="portals">
+                <div class="display-header">
+                  <span class="display-chip" data-i18n="systems.panes.portals.chip">Portal Experience</span>
+                  <h3 data-i18n="systems.panes.portals.title">Client and staff portals that centralize forms, updates, and next actions</h3>
+                </div>
+                <div class="console-grid">
+                  <div class="console-card">
+                    <strong data-i18n="systems.panes.portals.card1.label">Access</strong>
+                    <p data-i18n="systems.panes.portals.card1.body">Secure dashboards for documents, tasks, messages, and progress visibility</p>
+                  </div>
+                  <div class="console-card">
+                    <strong data-i18n="systems.panes.portals.card2.label">Automation</strong>
+                    <p data-i18n="systems.panes.portals.card2.body">Form submissions trigger downstream actions automatically.</p>
+                  </div>
+                  <div class="console-card emphasis">
+                    <strong data-i18n="systems.panes.portals.card3.label">Outcome</strong>
+                    <p data-i18n="systems.panes.portals.card3.body">Less email confusion and stronger client experience across service delivery.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="system-pane" data-pane="assistant">
+                <div class="display-header">
+                  <span class="display-chip" data-i18n="systems.panes.assistant.chip">AI Support Layer</span>
+                  <h3 data-i18n="systems.panes.assistant.title">Assistants that classify requests, answer business questions, and surface data</h3>
+                </div>
+                <div class="console-grid">
+                  <div class="console-card">
+                    <strong data-i18n="systems.panes.assistant.card1.label">Channels</strong>
+                    <p data-i18n="systems.panes.assistant.card1.body">Web chat, internal workspaces, email intake, service desks</p>
+                  </div>
+                  <div class="console-card">
+                    <strong data-i18n="systems.panes.assistant.card2.label">Capabilities</strong>
+                    <p data-i18n="systems.panes.assistant.card2.body">Summaries, lookups, triage, routing, and context-aware responses</p>
+                  </div>
+                  <div class="console-card emphasis">
+                    <strong data-i18n="systems.panes.assistant.card3.label">Outcome</strong>
+                    <p data-i18n="systems.panes.assistant.card3.body">Teams spend less time searching and more time executing decisions.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section visuals-section">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="visuals.eyebrow">System Previews</p>
+            <h2 data-i18n="visuals.title">Images that make the operating model feel tangible.</h2>
+            <p data-i18n="visuals.body">A stronger visual layer helps visitors understand that these are real systems, dashboards, and automation flows rather than abstract claims.</p>
+          </div>
+
+          <div class="visual-grid">
+            <article class="panel visual-card reveal">
+              <img class="visual-image" src="./assets/dashboard-visual.svg" alt="Automation dashboard preview" data-i18n-attr="alt:visuals.cards.dashboard.alt" />
+              <div class="visual-copy">
+                <span class="display-chip" data-i18n="visuals.cards.dashboard.chip">Control Layer</span>
+                <h3 data-i18n="visuals.cards.dashboard.title">A command-center view for approvals, reviews, and operating visibility.</h3>
+                <p data-i18n="visuals.cards.dashboard.body">Use interface-led visuals to show that your solutions are structured, measurable, and built for daily execution.</p>
+              </div>
+            </article>
+            <article class="panel visual-card reveal">
+              <img class="visual-image" src="./assets/automation-flow.svg" alt="Workflow automation map preview" data-i18n-attr="alt:visuals.cards.flow.alt" />
+              <div class="visual-copy">
+                <span class="display-chip" data-i18n="visuals.cards.flow.chip">Workflow Map</span>
+                <h3 data-i18n="visuals.cards.flow.title">A visual automation chain that connects triggers, routing, and action points.</h3>
+                <p data-i18n="visuals.cards.flow.body">These image panels add rhythm to the page and reinforce the idea of intelligent systems moving across the business.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section industries-section" id="industries">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="industries.eyebrow">Industry Fit</p>
+            <h2 data-i18n="industries.title">Designed for growing teams across real operating environments.</h2>
+          </div>
+
+          <div class="industry-grid">
+            <article class="panel industry-card reveal">
+              <h3 data-i18n="industries.cards.services.title">Professional Services</h3>
+              <p data-i18n="industries.cards.services.body">Intake, approvals, reporting, delivery tracking, and client communication flows.</p>
+            </article>
+            <article class="panel industry-card reveal">
+              <h3 data-i18n="industries.cards.retail.title">Retail</h3>
+              <p data-i18n="industries.cards.retail.body">Order handling, review systems, support automation, and inventory-linked notifications.</p>
+            </article>
+            <article class="panel industry-card reveal">
+              <h3 data-i18n="industries.cards.health.title">Healthcare & Clinics</h3>
+              <p data-i18n="industries.cards.health.body">Administrative workflows, bookings, reminders, forms, and internal coordination layers.</p>
+            </article>
+            <article class="panel industry-card reveal">
+              <h3 data-i18n="industries.cards.hospitality.title">Hospitality</h3>
+              <p data-i18n="industries.cards.hospitality.body">Guest communication, service recovery, scheduling, and operational handoff management.</p>
+            </article>
+            <article class="panel industry-card reveal">
+              <h3 data-i18n="industries.cards.logistics.title">Logistics</h3>
+              <p data-i18n="industries.cards.logistics.body">Movement visibility, request routing, milestone alerts, and exception handling systems.</p>
+            </article>
+            <article class="panel industry-card reveal">
+              <h3 data-i18n="industries.cards.education.title">Education & Training</h3>
+              <p data-i18n="industries.cards.education.body">Enrollment, learner progress, communication workflows, and staff-facing portal experiences.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section partner-section">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="partners.eyebrow">Partner Work</p>
+            <h2 data-i18n="partners.title">Trusted by teams that need practical automation.</h2>
+            <p data-i18n="partners.body">A partner section adds proof without turning the page into a wall of logos. We can keep it selective and credible.</p>
+          </div>
+
+          <div class="partner-layout">
+            <article class="panel partner-card reveal">
+              <div class="partner-brand">
+                <img class="partner-logo" src="./assets/nuctech-logo.png" alt="Nuctech Sydney logo" />
+                <div class="partner-meta">
+                  <span class="display-chip" data-i18n="partners.card.chip">Automation Delivery</span>
+                  <h3 data-i18n="partners.card.title">Automation support delivered for Nuctech Sydney.</h3>
+                </div>
+              </div>
+              <p data-i18n="partners.card.body">We have already supported Nuctech Sydney with automation work, and this section turns that into a clean proof point on the homepage.</p>
+              <div class="partner-metrics">
+                <div>
+                  <strong data-i18n="partners.card.metric1.label">Focus</strong>
+                  <span data-i18n="partners.card.metric1.value">Operational automation</span>
+                </div>
+                <div>
+                  <strong data-i18n="partners.card.metric2.label">Format</strong>
+                  <span data-i18n="partners.card.metric2.value">Custom workflow support</span>
+                </div>
+                <div>
+                  <strong data-i18n="partners.card.metric3.label">Positioning</strong>
+                  <span data-i18n="partners.card.metric3.value">Real business execution</span>
+                </div>
+              </div>
+            </article>
+            <article class="panel partner-proof reveal">
+              <img class="partner-visual" src="./assets/dashboard-visual.svg" alt="Operational dashboard visual" data-i18n-attr="alt:partners.proof.alt" />
+              <div class="partner-proof-copy">
+                <span class="display-chip" data-i18n="partners.proof.chip">Case Signal</span>
+                <h3 data-i18n="partners.proof.title">A selective proof block feels stronger than a generic logo wall.</h3>
+                <p data-i18n="partners.proof.body">By pairing the partner logo with a visual system panel, the section feels premium and integrated with the rest of the site.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section case-section" id="work">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="cases.eyebrow">Selected Outcomes</p>
+            <h2 data-i18n="cases.title">Operational results presented as system transformations.</h2>
+          </div>
+
+          <div class="case-grid">
+            <article class="panel case-card reveal">
+              <span class="case-tag" data-i18n="cases.cards.retail.tag">Retail Operations</span>
+              <h3 data-i18n="cases.cards.retail.title">Review workflow redesigned around automation and recovery.</h3>
+              <p><strong data-i18n="cases.labels.problem">Problem</strong> <span data-i18n="cases.cards.retail.problem">Manual review chasing led to low response rates and no internal handling for negative feedback.</span></p>
+              <p><strong data-i18n="cases.labels.solution">Solution</strong> <span data-i18n="cases.cards.retail.solution">Built an automated request flow with sentiment branching and team escalation.</span></p>
+              <p><strong data-i18n="cases.labels.outcome">Outcome</strong> <span data-i18n="cases.cards.retail.outcome">Faster follow-up, stronger review volume, and centralized brand protection.</span></p>
+            </article>
+            <article class="panel case-card reveal">
+              <span class="case-tag" data-i18n="cases.cards.services.tag">Professional Services</span>
+              <h3 data-i18n="cases.cards.services.title">Internal approvals moved from inbox chaos to a structured workflow hub.</h3>
+              <p><strong data-i18n="cases.labels.problem">Problem</strong> <span data-i18n="cases.cards.services.problem">Budget and leave requests were delayed by email bottlenecks and inconsistent records.</span></p>
+              <p><strong data-i18n="cases.labels.solution">Solution</strong> <span data-i18n="cases.cards.services.solution">Deployed a custom approval system with rule-based routing and audit trails.</span></p>
+              <p><strong data-i18n="cases.labels.outcome">Outcome</strong> <span data-i18n="cases.cards.services.outcome">Manual admin reduced, approval speed improved, and visibility increased across leadership.</span></p>
+            </article>
+            <article class="panel case-card reveal">
+              <span class="case-tag" data-i18n="cases.cards.education.tag">Education</span>
+              <h3 data-i18n="cases.cards.education.title">Student operations consolidated into one portal and automation layer.</h3>
+              <p><strong data-i18n="cases.labels.problem">Problem</strong> <span data-i18n="cases.cards.education.problem">Enrollment, reminders, and status updates were split across spreadsheets and manual follow-up.</span></p>
+              <p><strong data-i18n="cases.labels.solution">Solution</strong> <span data-i18n="cases.cards.education.solution">Built a staff dashboard and portal with automated communication sequences.</span></p>
+              <p><strong data-i18n="cases.labels.outcome">Outcome</strong> <span data-i18n="cases.cards.education.outcome">Better response time, clearer ownership, and one source of operational truth.</span></p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section value-section" id="about">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="value.eyebrow">Why Beyond Perception</p>
+            <h2 data-i18n="value.title">Enterprise-grade thinking with practical execution discipline.</h2>
+          </div>
+
+          <div class="value-grid">
+            <article class="panel value-card reveal">
+              <h3 data-i18n="value.cards.practical.title">Practical AI</h3>
+              <p data-i18n="value.cards.practical.body">We deploy AI to solve workflow constraints, not to decorate a pitch deck.</p>
+            </article>
+            <article class="panel value-card reveal">
+              <h3 data-i18n="value.cards.custom.title">Custom-Built</h3>
+              <p data-i18n="value.cards.custom.body">Solutions are shaped around your process architecture instead of generic templates.</p>
+            </article>
+            <article class="panel value-card reveal">
+              <h3 data-i18n="value.cards.chain.title">Automation + App + Integration</h3>
+              <p data-i18n="value.cards.chain.body">We optimize the full operational chain, not isolated features.</p>
+            </article>
+            <article class="panel value-card reveal">
+              <h3 data-i18n="value.cards.scale.title">Modern, Scalable Systems</h3>
+              <p data-i18n="value.cards.scale.body">What gets launched is designed to expand as the business adds new workflows and teams.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section manifesto-section">
+          <div class="manifesto reveal">
+            <p class="eyebrow" data-i18n="manifesto.eyebrow">Brand Statement</p>
+            <h2 data-i18n="manifesto.title">Beyond Perception. Beyond manual work. Beyond basic automation.</h2>
+            <p data-i18n="manifesto.body">We design intelligent systems for businesses ready to scale with precision.</p>
+          </div>
+        </section>
+
+        <section class="section cta-section" id="contact">
+          <div class="panel cta-panel reveal">
+            <div>
+              <p class="eyebrow" data-i18n="cta.eyebrow">Start the Conversation</p>
+              <h2 data-i18n="cta.title">Ready to automate smarter?</h2>
+              <p data-i18n="cta.body">
+                Tell us how your business works. We'll identify what can be automated,
+                optimized, or rebuilt with AI.
+              </p>
+            </div>
+            <div class="cta-actions">
+              <a class="button button-primary" href="mailto:katherine@beyondperceptiontech.com" data-i18n="cta.primary">Book a Consultation</a>
+              <a class="button button-secondary" href="mailto:katherine@beyondperceptiontech.com" data-i18n="cta.secondary">Start Your Project</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div class="chatbot-shell" data-chatbot>
+        <button
+          class="chatbot-launch"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-chatbot-panel"
+          aria-label="Open AI consultant"
+          data-chat-open
+        >
+          <span class="chatbot-launch-dot" aria-hidden="true"></span>
+          <span class="chatbot-launch-copy">
+            <strong>AI Consultant</strong>
+            <span>Instant replies</span>
+          </span>
+        </button>
+
+        <section
+          class="chatbot-panel"
+          id="site-chatbot-panel"
+          aria-hidden="true"
+          data-chat-panel
+        >
+          <div class="chatbot-header">
+            <div class="chatbot-heading">
+              <span class="chatbot-badge">Front-end demo</span>
+              <h2>AI Consultation Bot</h2>
+              <p>Ask about automation, pricing, integrations, or project timing.</p>
+            </div>
+            <button class="chatbot-close" type="button" aria-label="Close AI consultant" data-chat-close>
+              ×
+            </button>
+          </div>
+
+          <div class="chatbot-messages" data-chat-messages></div>
+          <div class="chatbot-suggestions" data-chat-suggestions></div>
+
+          <form class="chatbot-form" data-chat-form>
+            <label class="sr-only" for="chatbot-input">Ask the AI consultant</label>
+            <input
+              class="chatbot-input"
+              id="chatbot-input"
+              name="message"
+              type="text"
+              autocomplete="off"
+              placeholder="Ask about your workflow..."
+              data-chat-input
+            />
+            <button class="chatbot-submit" type="submit" data-chat-submit>Send</button>
+          </form>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-brand-block">
+          <a class="brand footer-brand" href="#hero">
+            <img class="brand-logo brand-logo-footer" src="./assets/beyond-perception-logo-white.png" alt="Beyond Perception" />
+          </a>
+          <p class="footer-summary" data-i18n="footer.summary">Intelligent systems for real business operations.</p>
+        </div>
+        <div class="footer-group">
+          <p class="footer-heading" data-i18n="footer.navigationLabel">Navigation</p>
+          <div class="footer-links">
+            <a href="#solutions" data-i18n="navigation.solutions">Solutions</a>
+            <a href="#services" data-i18n="navigation.services">Services</a>
+            <a href="#industries" data-i18n="navigation.industries">Industries</a>
+            <a href="#contact" data-i18n="navigation.contact">Contact</a>
+          </div>
+        </div>
+        <div class="footer-group">
+          <p class="footer-heading" data-i18n="footer.contactLabel">Reach Out</p>
+          <div class="footer-links footer-contact-links">
+            <a href="mailto:katherine@beyondperceptiontech.com">katherine@beyondperceptiontech.com</a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" data-i18n="footer.linkedin">LinkedIn</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

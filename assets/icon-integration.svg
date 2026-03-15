@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="integrationGlow" x1="14" y1="14" x2="50" y2="50" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C7F0FF" />
+      <stop offset="1" stop-color="#6DD3FF" />
+    </linearGradient>
+  </defs>
+  <path d="M22 22H42V42H22V22Z" stroke="url(#integrationGlow)" stroke-width="2.8" stroke-linejoin="round" stroke-dasharray="4 4" />
+  <path d="M22 22 14 14" stroke="#F3F7FF" stroke-linecap="round" stroke-width="2.8" />
+  <path d="M42 22 50 14" stroke="#F3F7FF" stroke-linecap="round" stroke-width="2.8" />
+  <path d="M22 42 14 50" stroke="#F3F7FF" stroke-linecap="round" stroke-width="2.8" />
+  <path d="M42 42 50 50" stroke="#F3F7FF" stroke-linecap="round" stroke-width="2.8" />
+  <circle cx="14" cy="14" r="4" fill="#F3F7FF" />
+  <circle cx="50" cy="14" r="4" fill="#F3F7FF" />
+  <circle cx="14" cy="50" r="4" fill="#F3F7FF" />
+  <circle cx="50" cy="50" r="4" fill="#F3F7FF" />
+</svg>
