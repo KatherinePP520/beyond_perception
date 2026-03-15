@@ -318,6 +318,7 @@ h1 {
   border-radius: 999px;
   border: 1px solid rgba(118, 212, 255, 0.22);
   overflow: hidden;
+  white-space: nowrap;
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
 }
 
@@ -1538,6 +1539,10 @@ body[data-lang="zh"] .process-index {
   }
 
   .menu-toggle {
+    margin-top: 5px;
+  }
+
+  .menu-toggle {
     display: inline-flex;
   }
 
@@ -1594,6 +1599,10 @@ body[data-lang="zh"] .process-index {
 @media (max-width: 760px) {
   .topbar {
     padding: 10px 14px;
+  }
+
+  .menu-toggle {
+    margin-top: 7px;
   }
 
   .topbar,
@@ -1660,6 +1669,10 @@ body[data-lang="zh"] .process-index {
   .footer {
     grid-template-columns: 1fr;
     justify-items: stretch;
+  }
+
+  .menu-toggle {
+    margin-top: 10px;
   }
 
   .footer-brand-block {

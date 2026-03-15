@@ -1,0 +1,317 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "Beyond Perception home" [ref=e4] [cursor=pointer]:
+      - /url: "#hero"
+      - img "Beyond Perception" [ref=e5]
+      - generic [ref=e6]: Beyond Perception
+    - navigation [ref=e7]:
+      - link "Solutions" [ref=e8] [cursor=pointer]:
+        - /url: "#solutions"
+      - link "Services" [ref=e9] [cursor=pointer]:
+        - /url: "#services"
+      - link "Industries" [ref=e10] [cursor=pointer]:
+        - /url: "#industries"
+      - link "Work" [ref=e11] [cursor=pointer]:
+        - /url: "#work"
+      - link "About" [ref=e12] [cursor=pointer]:
+        - /url: "#about"
+      - link "Contact" [ref=e13] [cursor=pointer]:
+        - /url: "#contact"
+      - group "Language switcher" [ref=e14]:
+        - button "EN" [pressed] [ref=e15] [cursor=pointer]
+        - button "中" [ref=e16] [cursor=pointer]
+      - link "Book a Demo" [ref=e17] [cursor=pointer]:
+        - /url: "#contact"
+  - main [ref=e18]:
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - paragraph [ref=e21]: Fully Custom AI Systems / Workflow Intelligence / Business Automation
+        - heading "Fully custom AI systems built around your business." [level=1] [ref=e22]
+        - paragraph [ref=e23]: We design and build fully custom AI systems for growing businesses, turning real internal workflows into automation, apps, and operating tools that scale with execution.
+        - generic [ref=e24]:
+          - link "Book a Demo" [ref=e25] [cursor=pointer]:
+            - /url: "#contact"
+          - link "Explore Solutions" [ref=e26] [cursor=pointer]:
+            - /url: "#solutions"
+        - generic [ref=e27]:
+          - generic [ref=e28]:
+            - term [ref=e29]: Workflow Time Saved
+            - definition [ref=e30]: 0%
+          - generic [ref=e31]:
+            - term [ref=e32]: Connected Platforms
+            - definition [ref=e33]: 0+
+          - generic [ref=e34]:
+            - term [ref=e35]: Launch Window
+            - definition [ref=e36]: 0 Weeks
+      - generic [ref=e38]:
+        - generic [ref=e42]:
+          - generic [ref=e43]: AI CONTROL CORE
+          - strong [ref=e44]: Operational Intelligence
+          - paragraph [ref=e45]: Reviews / Approvals / Dashboards / Messaging / Integrations
+        - generic [ref=e47]: Review Automation
+        - generic [ref=e49]: Internal Ops
+        - generic [ref=e51]: Smart Portals
+        - generic [ref=e53]: AI Assistants
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - paragraph [ref=e59]: Core Capabilities
+        - heading "Built for businesses that need custom systems, not off-the-shelf software." [level=2] [ref=e60]
+        - paragraph [ref=e61]: Four focused capabilities turn fragmented tools and repetitive workflows into fully custom operating systems.
+      - generic [ref=e62]:
+        - article [ref=e63]:
+          - img [ref=e65]
+          - heading "AI Automation" [level=3] [ref=e66]
+          - paragraph [ref=e67]: Automate repetitive business tasks, triggers, notifications, approvals, and follow-up logic.
+        - article [ref=e68]:
+          - img [ref=e70]
+          - heading "Custom Business Systems" [level=3] [ref=e71]
+          - paragraph [ref=e72]: Design custom internal tools for CRM, HR, approvals, client workflows, dashboards, and operating visibility.
+        - article [ref=e73]:
+          - img [ref=e75]
+          - heading "Smart Apps" [level=3] [ref=e76]
+          - paragraph [ref=e77]: Ship customer and team-facing portals, web apps, and mobile-ready experiences with clear business purpose.
+        - article [ref=e78]:
+          - img [ref=e80]
+          - heading "Integration Design" [level=3] [ref=e81]
+          - paragraph [ref=e82]: Connect platforms, consolidate data, and turn isolated tasks into one coherent workflow chain.
+    - generic [ref=e83]:
+      - generic [ref=e84]:
+        - paragraph [ref=e85]: Execution Model
+        - heading "From manual work to intelligent operations." [level=2] [ref=e86]
+        - paragraph [ref=e87]: We keep the process commercial, structured, and measurable from discovery to rollout.
+      - generic [ref=e88]:
+        - article [ref=e89]:
+          - generic [ref=e90]: "01"
+          - heading "Understand your workflow" [level=3] [ref=e91]
+          - paragraph [ref=e92]: Map current operations, identify manual bottlenecks, and isolate high-value automation targets.
+        - article [ref=e93]:
+          - generic [ref=e94]: "02"
+          - heading "Design the automation logic" [level=3] [ref=e95]
+          - paragraph [ref=e96]: Define rules, triggers, handoffs, and exception handling that fit how the business already runs.
+        - article [ref=e97]:
+          - generic [ref=e98]: "03"
+          - heading "Build your custom solution" [level=3] [ref=e99]
+          - paragraph [ref=e100]: Develop the app, workflow, dashboards, integrations, or assistant required for execution.
+        - article [ref=e101]:
+          - generic [ref=e102]: "04"
+          - heading "Launch, optimize, scale" [level=3] [ref=e103]
+          - paragraph [ref=e104]: Deploy, observe adoption, refine edge cases, and extend automation to adjacent business functions.
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - paragraph [ref=e107]: Solution Views
+        - heading "Scenario-based systems, not generic feature lists." [level=2] [ref=e108]
+        - paragraph [ref=e109]: Each solution area is framed around a concrete operational use case and the workflow behind it.
+      - generic [ref=e110]:
+        - tablist "Solution categories" [ref=e111]:
+          - tab "Review Automation" [selected] [ref=e112]
+          - tab "Internal Operations" [ref=e113]
+          - tab "Approval Workflows" [ref=e114]
+          - tab "Smart Portals" [ref=e115]
+          - tab "AI Assistants" [ref=e116]
+        - generic [ref=e118]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: Customer Communication
+            - heading "Automated review collection with internal escalation logic" [level=3] [ref=e121]
+          - generic [ref=e122]:
+            - generic [ref=e123]:
+              - strong [ref=e124]: Trigger
+              - paragraph [ref=e125]: Order completed
+            - generic [ref=e126]:
+              - strong [ref=e127]: Workflow
+              - paragraph [ref=e128]: Message sent, sentiment scored, follow-up routed
+            - generic [ref=e129]:
+              - strong [ref=e130]: Protect the brand
+              - paragraph [ref=e131]: Low-rating responses are diverted to internal recovery before public posting.
+    - generic [ref=e132]:
+      - generic [ref=e133]:
+        - paragraph [ref=e134]: System Views
+        - heading "Approvals, tasks, and follow-up running in one system." [level=2] [ref=e135]
+        - paragraph [ref=e136]: From intake to routing to completion, every step stays visible and moves without manual chasing.
+      - generic [ref=e137]:
+        - article [ref=e138]:
+          - img "Automation dashboard preview" [ref=e139]
+          - generic [ref=e140]:
+            - generic [ref=e141]: Operations Console
+            - heading "Leave approvals, service updates, and internal tasks managed from a single workspace." [level=3] [ref=e142]
+            - paragraph [ref=e143]: Owners, statuses, and next actions stay clear across the whole team.
+        - article [ref=e144]:
+          - img "Workflow automation map preview" [ref=e145]
+          - generic [ref=e146]:
+            - generic [ref=e147]: Workflow Engine
+            - heading "Submissions trigger routing, reminders, escalation, and updates automatically." [level=3] [ref=e148]
+            - paragraph [ref=e149]: The process keeps moving without forwarding emails or checking progress by hand.
+    - generic [ref=e150]:
+      - generic [ref=e151]:
+        - paragraph [ref=e152]: Industry Fit
+        - heading "Designed for growing teams across real operating environments." [level=2] [ref=e153]
+      - generic [ref=e154]:
+        - article [ref=e155]:
+          - heading "Professional Services" [level=3] [ref=e156]
+          - paragraph [ref=e157]: Intake, approvals, reporting, delivery tracking, and client communication flows.
+        - article [ref=e158]:
+          - heading "Retail" [level=3] [ref=e159]
+          - paragraph [ref=e160]: Order handling, review systems, support automation, and inventory-linked notifications.
+        - article [ref=e161]:
+          - heading "Healthcare & Clinics" [level=3] [ref=e162]
+          - paragraph [ref=e163]: Administrative workflows, bookings, reminders, forms, and internal coordination layers.
+        - article [ref=e164]:
+          - heading "Hospitality" [level=3] [ref=e165]
+          - paragraph [ref=e166]: Guest communication, service recovery, scheduling, and operational handoff management.
+        - article [ref=e167]:
+          - heading "Logistics" [level=3] [ref=e168]
+          - paragraph [ref=e169]: Movement visibility, request routing, milestone alerts, and exception handling systems.
+        - article [ref=e170]:
+          - heading "Education & Training" [level=3] [ref=e171]
+          - paragraph [ref=e172]: Enrollment, learner progress, communication workflows, and staff-facing portal experiences.
+    - generic [ref=e173]:
+      - generic [ref=e174]:
+        - paragraph [ref=e175]: Partner Work
+        - heading "Selected partner work grounded in real operations." [level=2] [ref=e176]
+        - paragraph [ref=e177]: We work with businesses that need automation to improve execution, reduce manual coordination, and create cleaner operating flows.
+      - generic [ref=e178]:
+        - article [ref=e179]:
+          - generic [ref=e180]:
+            - img "Nuctech Sydney logo" [ref=e181]
+            - generic [ref=e182]:
+              - generic [ref=e183]: Partner Highlight
+              - heading "Nuctech Sydney" [level=3] [ref=e184]
+          - paragraph [ref=e185]: Delivered a fully custom internal employee work management system for Nuctech Sydney, including automated leave requests and approval flows.
+          - generic [ref=e186]:
+            - generic [ref=e187]:
+              - strong [ref=e188]: System
+              - generic [ref=e189]: Internal work management
+            - generic [ref=e190]:
+              - strong [ref=e191]: Automation
+              - generic [ref=e192]: Leave request workflow
+            - generic [ref=e193]:
+              - strong [ref=e194]: Delivery
+              - generic [ref=e195]: Fully custom-built
+        - article [ref=e196]:
+          - img "Operational dashboard visual" [ref=e197]
+          - generic [ref=e198]:
+            - generic [ref=e199]: System View
+            - heading "Custom employee operations systems built around real internal workflows." [level=3] [ref=e200]
+            - paragraph [ref=e201]: The solution was designed around Nuctech Sydney's actual staff management and leave handling process, not an off-the-shelf template.
+    - generic [ref=e202]:
+      - generic [ref=e203]:
+        - paragraph [ref=e204]: Selected Outcomes
+        - heading "Operational results presented as system transformations." [level=2] [ref=e205]
+      - generic [ref=e206]:
+        - article [ref=e207]:
+          - generic [ref=e208]: Retail Operations
+          - heading "Review workflow redesigned around automation and recovery." [level=3] [ref=e209]
+          - paragraph [ref=e210]:
+            - strong [ref=e211]: Problem
+            - text: Manual review chasing led to low response rates and no internal handling for negative feedback.
+          - paragraph [ref=e212]:
+            - strong [ref=e213]: Solution
+            - text: Built an automated request flow with sentiment branching and team escalation.
+          - paragraph [ref=e214]:
+            - strong [ref=e215]: Outcome
+            - text: Faster follow-up, stronger review volume, and centralized brand protection.
+        - article [ref=e216]:
+          - generic [ref=e217]: Professional Services
+          - heading "Internal approvals moved from inbox chaos to a structured workflow hub." [level=3] [ref=e218]
+          - paragraph [ref=e219]:
+            - strong [ref=e220]: Problem
+            - text: Budget and leave requests were delayed by email bottlenecks and inconsistent records.
+          - paragraph [ref=e221]:
+            - strong [ref=e222]: Solution
+            - text: Deployed a custom approval system with rule-based routing and audit trails.
+          - paragraph [ref=e223]:
+            - strong [ref=e224]: Outcome
+            - text: Manual admin reduced, approval speed improved, and visibility increased across leadership.
+        - article [ref=e225]:
+          - generic [ref=e226]: Education
+          - heading "Student operations consolidated into one portal and automation layer." [level=3] [ref=e227]
+          - paragraph [ref=e228]:
+            - strong [ref=e229]: Problem
+            - text: Enrollment, reminders, and status updates were split across spreadsheets and manual follow-up.
+          - paragraph [ref=e230]:
+            - strong [ref=e231]: Solution
+            - text: Built a staff dashboard and portal with automated communication sequences.
+          - paragraph [ref=e232]:
+            - strong [ref=e233]: Outcome
+            - text: Better response time, clearer ownership, and one source of operational truth.
+    - generic [ref=e234]:
+      - generic [ref=e235]:
+        - paragraph [ref=e236]: Why Beyond Perception
+        - heading "Enterprise-grade thinking with practical execution discipline." [level=2] [ref=e237]
+      - generic [ref=e238]:
+        - article [ref=e239]:
+          - heading "Practical AI" [level=3] [ref=e240]
+          - paragraph [ref=e241]: We deploy AI to solve workflow constraints, not to decorate a pitch deck.
+        - article [ref=e242]:
+          - heading "Custom-Built" [level=3] [ref=e243]
+          - paragraph [ref=e244]: Every system is shaped around your actual process architecture instead of generic templates or packaged software.
+        - article [ref=e245]:
+          - heading "Automation + App + Integration" [level=3] [ref=e246]
+          - paragraph [ref=e247]: We optimize the full operational chain, not isolated features.
+        - article [ref=e248]:
+          - heading "Modern, Scalable Systems" [level=3] [ref=e249]
+          - paragraph [ref=e250]: What gets launched is designed to expand as the business adds new workflows and teams.
+    - generic [ref=e252]:
+      - paragraph [ref=e253]: Brand Statement
+      - heading "Beyond Perception. Beyond manual work. Beyond basic automation." [level=2] [ref=e254]
+      - paragraph [ref=e255]: We design intelligent systems for businesses ready to scale with precision.
+    - generic [ref=e257]:
+      - generic [ref=e258]:
+        - paragraph [ref=e259]: Start the Conversation
+        - heading "Ready to automate smarter?" [level=2] [ref=e260]
+        - paragraph [ref=e261]: Tell us how your business works. We'll identify what can be automated, optimized, or rebuilt with AI.
+      - generic [ref=e262]:
+        - link "Book a Consultation" [ref=e263] [cursor=pointer]:
+          - /url: mailto:katherine@beyondperceptiontech.com
+        - link "Start Your Project" [ref=e264] [cursor=pointer]:
+          - /url: mailto:katherine@beyondperceptiontech.com
+  - generic [ref=e265]:
+    - button "Open AI consultant" [ref=e266] [cursor=pointer]:
+      - generic [ref=e268]:
+        - strong [ref=e269]: AI Consultant
+        - generic [ref=e270]: Instant replies
+    - generic:
+      - generic:
+        - generic:
+          - generic: Front-end demo
+          - heading [level=2]: AI Consultation Bot
+          - paragraph: Ask about workflows, pricing, dashboards, approvals, or integrations.
+        - button: ×
+      - generic:
+        - article:
+          - generic:
+            - paragraph: Hi, I can answer common consultation questions on this page. Ask about automation, approvals, portals, dashboards, pricing, integrations, or industry-specific use cases.
+      - generic:
+        - button: What can you automate?
+        - button: Can you build approval workflows?
+        - button: Can you connect to our CRM?
+        - button: How does pricing work?
+        - button: We run a clinic or retail team. What fits?
+      - generic:
+        - generic: Ask the AI consultant
+        - textbox:
+          - /placeholder: Ask about your workflow, team, or system idea...
+        - button: Send
+  - contentinfo [ref=e271]:
+    - generic [ref=e272]:
+      - link "Beyond Perception" [ref=e273] [cursor=pointer]:
+        - /url: "#hero"
+        - img "Beyond Perception" [ref=e274]
+      - paragraph [ref=e275]: Intelligent systems for real business operations.
+    - generic [ref=e276]:
+      - paragraph [ref=e277]: Navigation
+      - generic [ref=e278]:
+        - link "Solutions" [ref=e279] [cursor=pointer]:
+          - /url: "#solutions"
+        - link "Services" [ref=e280] [cursor=pointer]:
+          - /url: "#services"
+        - link "Industries" [ref=e281] [cursor=pointer]:
+          - /url: "#industries"
+        - link "Contact" [ref=e282] [cursor=pointer]:
+          - /url: "#contact"
+    - generic [ref=e283]:
+      - paragraph [ref=e284]: Reach Out
+      - generic [ref=e285]:
+        - link "katherine@beyondperceptiontech.com" [ref=e286] [cursor=pointer]:
+          - /url: mailto:katherine@beyondperceptiontech.com
+        - link "LinkedIn" [ref=e287] [cursor=pointer]:
+          - /url: https://www.linkedin.com
