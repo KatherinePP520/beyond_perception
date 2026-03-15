@@ -3,9 +3,11 @@ import "./styles.css";
 const translations = {
   en: {
     meta: {
-      title: "Beyond Perception | Intelligent Systems for Real Business",
+      title: "Beyond Perception | Custom AI Automation, Software Development & IT Services",
       description:
-        "Beyond Perception designs AI-powered automation, workflow intelligence, and custom business systems for growing companies.",
+        "Beyond Perception provides custom AI automation, tailored software development, workflow integration, and IT services for businesses that need smarter operations.",
+      keywords:
+        "Beyond Perception, custom AI automation, AI automation services, custom software development, workflow automation, business systems, AI solutions, IT services, tailored software, operational intelligence",
     },
     brand: {
       name: "Beyond Perception",
@@ -26,10 +28,10 @@ const translations = {
       switcher: "Language switcher",
     },
     hero: {
-      eyebrow: "Fully Custom AI Systems / Workflow Intelligence / Business Automation",
-      title: "Fully custom AI systems built around your business.",
+      eyebrow: "Custom AI Automation / Software Development / Business IT Services",
+      title: "Beyond Perception builds custom AI automation and IT systems around your business.",
       body:
-        "We design and build fully custom AI systems for growing businesses, turning real internal workflows into automation, apps, and operating tools that scale with execution.",
+        "We design and build custom AI automation, tailored software, and business IT systems for growing companies, turning real internal workflows into scalable tools, apps, and operating infrastructure.",
       primaryCta: "Book a Demo",
       secondaryCta: "Explore Solutions",
       metrics: {
@@ -52,9 +54,9 @@ const translations = {
     },
     capabilities: {
       eyebrow: "Core Capabilities",
-      title: "Built for businesses that need custom systems, not off-the-shelf software.",
+      title: "Built for companies that need customized systems, not off-the-shelf software.",
       body:
-        "Four focused capabilities turn fragmented tools and repetitive workflows into fully custom operating systems.",
+        "Four focused capabilities turn fragmented tools, repetitive workflows, and disconnected software into fully custom operating systems.",
       cards: {
         automation: {
           title: "AI Automation",
@@ -258,7 +260,7 @@ const translations = {
     },
     value: {
       eyebrow: "Why Beyond Perception",
-      title: "Enterprise-grade thinking with practical execution discipline.",
+      title: "A practical partner for custom AI, automation, software development, and IT services.",
       cards: {
         practical: {
           title: "Practical AI",
@@ -278,20 +280,62 @@ const translations = {
         },
       },
     },
+    seo: {
+      eyebrow: "Custom AI and IT Services",
+      title: "Clear English SEO copy for automation, customization, AI, and IT services.",
+      body: "Beyond Perception delivers custom AI automation services, tailored software development, workflow integration, and practical IT services for growing businesses.",
+      cards: {
+        automation: {
+          title: "AI Automation Services",
+          body: "We design AI automation for approvals, routing, follow-up, review requests, reporting, and repetitive operational tasks.",
+        },
+        software: {
+          title: "Custom Software Development",
+          body: "We build tailored internal tools, web apps, dashboards, and portals that match the way your company actually works.",
+        },
+        it: {
+          title: "Business IT Services",
+          body: "We connect platforms, structure data, and improve operational visibility so teams can run cleaner systems with fewer manual gaps.",
+        },
+        custom: {
+          title: "Customized AI Systems",
+          body: "Every Beyond Perception solution is customized around workflow logic, integrations, approvals, and business-specific execution rules.",
+        },
+      },
+    },
+    faq: {
+      eyebrow: "SEO FAQ",
+      title: "Questions that connect the Beyond Perception brand with AI and IT services.",
+      body: "These answers reinforce what Beyond Perception provides: custom AI automation, customized software, and business IT services.",
+      items: {
+        one: {
+          question: "What AI automation services does Beyond Perception provide?",
+          answer: "Beyond Perception delivers custom AI automation for approvals, review requests, dashboards, reporting, portals, follow-up workflows, and internal operational systems.",
+        },
+        two: {
+          question: "Does Beyond Perception build custom software and business IT systems?",
+          answer: "Yes. We build tailored internal software, workflow systems, staff portals, client portals, dashboards, and integrated business tools instead of forcing generic software onto unique operations.",
+        },
+        three: {
+          question: "Who uses Beyond Perception's AI and IT services?",
+          answer: "Growing companies across professional services, retail, healthcare, hospitality, logistics, and education use Beyond Perception when off-the-shelf tools no longer fit their workflows.",
+        },
+      },
+    },
     manifesto: {
       eyebrow: "Brand Statement",
       title: "Beyond Perception. Beyond manual work. Beyond basic automation.",
-      body: "We design intelligent systems for businesses ready to scale with precision.",
+      body: "We design custom AI systems, automation, software, and IT services for businesses ready to scale with precision.",
     },
     cta: {
       eyebrow: "Start the Conversation",
       title: "Ready to automate smarter?",
-      body: "Tell us how your business works. We'll identify what can be automated, optimized, or rebuilt with AI.",
+      body: "Tell us how your business works. We'll identify what can be automated, customized, integrated, or rebuilt with AI and modern business IT systems.",
       primary: "Book a Consultation",
       secondary: "Start Your Project",
     },
     footer: {
-      summary: "Intelligent systems for real business operations.",
+      summary: "Custom AI automation, software development, and IT services for real business operations.",
       navigationLabel: "Navigation",
       contactLabel: "Reach Out",
       linkedin: "LinkedIn",
@@ -854,6 +898,7 @@ const langButtons = [...document.querySelectorAll("[data-lang-toggle]")];
 const translatableNodes = [...document.querySelectorAll("[data-i18n]")];
 const translatableAttrs = [...document.querySelectorAll("[data-i18n-attr]")];
 const descriptionMeta = document.querySelector('meta[name="description"]');
+const keywordsMeta = document.querySelector('meta[name="keywords"]');
 const canvas = document.querySelector(".particle-field");
 const heroVisual = document.querySelector(".control-core");
 const chatbotShell = document.querySelector("[data-chatbot]");
@@ -886,6 +931,10 @@ const applyLanguage = (lang) => {
 
   if (descriptionMeta) {
     descriptionMeta.setAttribute("content", locale.meta.description);
+  }
+
+  if (keywordsMeta && typeof locale.meta.keywords === "string") {
+    keywordsMeta.setAttribute("content", locale.meta.keywords);
   }
 
   translatableNodes.forEach((node) => {

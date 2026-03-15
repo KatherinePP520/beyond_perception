@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Beyond Perception</title>
+  <desc id="desc">Custom AI automation, software development, and IT services.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06101d" />
+      <stop offset="55%" stop-color="#0b1b2f" />
+      <stop offset="100%" stop-color="#08111f" />
+    </linearGradient>
+    <radialGradient id="glowA" cx="18%" cy="22%" r="58%">
+      <stop offset="0%" stop-color="#4d7dff" stop-opacity="0.42" />
+      <stop offset="100%" stop-color="#4d7dff" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowB" cx="82%" cy="30%" r="52%">
+      <stop offset="0%" stop-color="#76d4ff" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#76d4ff" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#76d4ff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#76d4ff" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#4d7dff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" rx="36" fill="url(#bg)" />
+  <rect width="1200" height="630" rx="36" fill="url(#glowA)" />
+  <rect width="1200" height="630" rx="36" fill="url(#glowB)" />
+  <rect x="38" y="38" width="1124" height="554" rx="28" fill="none" stroke="rgba(118,212,255,0.22)" />
+
+  <g opacity="0.32">
+    <path d="M120 174 H1080" stroke="url(#line)" stroke-width="2" />
+    <path d="M120 458 H1080" stroke="url(#line)" stroke-width="2" />
+    <path d="M240 110 V520" stroke="#1d3554" stroke-width="1.5" />
+    <path d="M600 110 V520" stroke="#1d3554" stroke-width="1.5" />
+    <path d="M960 110 V520" stroke="#1d3554" stroke-width="1.5" />
+  </g>
+
+  <g transform="translate(120 122)">
+    <text x="0" y="0" fill="#9fdcff" font-family="Manrope, Arial, sans-serif" font-size="28" letter-spacing="6">BEYOND PERCEPTION</text>
+    <text x="0" y="112" fill="#f3f7ff" font-family="Sora, Arial, sans-serif" font-size="72" font-weight="700">Custom AI Automation</text>
+    <text x="0" y="194" fill="#f3f7ff" font-family="Sora, Arial, sans-serif" font-size="72" font-weight="700">&amp; IT Services</text>
+    <text x="0" y="276" fill="#9ba8c1" font-family="Manrope, Arial, sans-serif" font-size="30">Tailored software, workflow integration, portals, approvals, and operational systems.</text>
+  </g>
+
+  <g transform="translate(120 486)">
+    <rect x="0" y="-34" width="304" height="60" rx="30" fill="#10233c" stroke="#2e567f" />
+    <text x="30" y="4" fill="#d8f4ff" font-family="Manrope, Arial, sans-serif" font-size="24">Automation</text>
+    <rect x="330" y="-34" width="284" height="60" rx="30" fill="#10233c" stroke="#2e567f" />
+    <text x="360" y="4" fill="#d8f4ff" font-family="Manrope, Arial, sans-serif" font-size="24">Customization</text>
+    <rect x="638" y="-34" width="148" height="60" rx="30" fill="#10233c" stroke="#2e567f" />
+    <text x="684" y="4" fill="#d8f4ff" font-family="Manrope, Arial, sans-serif" font-size="24">AI</text>
+    <rect x="810" y="-34" width="160" height="60" rx="30" fill="#10233c" stroke="#2e567f" />
+    <text x="857" y="4" fill="#d8f4ff" font-family="Manrope, Arial, sans-serif" font-size="24">IT</text>
+  </g>
+</svg>

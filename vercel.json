@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "beyondperceptiontech.com"
+        }
+      ],
+      "destination": "https://www.beyondperceptiontech.com/$1",
+      "permanent": true
+    }
+  ]
+}
