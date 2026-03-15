@@ -869,7 +869,10 @@ const chatbotSubmit = document.querySelector("[data-chat-submit]");
 const chatState = {
   history: [],
   isTyping: false,
+  suggestionsExpanded: false,
 };
+
+let chatbotInactivityTimer = 0;
 
 const getValue = (source, path) =>
   path.split(".").reduce((value, key) => (value && key in value ? value[key] : undefined), source);
@@ -1018,6 +1021,45 @@ function renderChatSuggestions() {
     });
     chatbotSuggestions.append(button);
   });
+
+  syncChatSuggestionsState();
+}
+
+function syncChatSuggestionsState() {
+  if (!chatbotSuggestions) {
+    return;
+  }
+
+  const hasSuggestions = chatbotSuggestions.childElementCount > 0;
+  const hidden = !hasSuggestions;
+
+  chatbotSuggestions.classList.toggle("is-hidden", hidden);
+  chatbotSuggestions.classList.toggle("is-expanded", !hidden && chatState.suggestionsExpanded);
+}
+
+function setChatSuggestionsExpanded(expanded) {
+  chatState.suggestionsExpanded = expanded;
+  syncChatSuggestionsState();
+}
+
+function clearChatbotInactivityTimer() {
+  if (!chatbotInactivityTimer) {
+    return;
+  }
+
+  window.clearTimeout(chatbotInactivityTimer);
+  chatbotInactivityTimer = 0;
+}
+
+function resetChatbotInactivityTimer() {
+  if (!chatbotShell || !chatbotShell.classList.contains("is-open")) {
+    return;
+  }
+
+  clearChatbotInactivityTimer();
+  chatbotInactivityTimer = window.setTimeout(() => {
+    closeChatbot();
+  }, 30000);
 }
 
 function syncChatbotUI() {
@@ -1192,6 +1234,7 @@ function openChatbot() {
   chatbotOpenButton?.setAttribute("aria-expanded", "true");
   chatbotPanel.setAttribute("aria-hidden", "false");
   seedChatConversation();
+  resetChatbotInactivityTimer();
   window.setTimeout(() => chatbotInput?.focus(), 120);
 }
 
@@ -1203,6 +1246,7 @@ function closeChatbot() {
   chatbotShell.classList.remove("is-open");
   chatbotOpenButton?.setAttribute("aria-expanded", "false");
   chatbotPanel.setAttribute("aria-hidden", "true");
+  clearChatbotInactivityTimer();
 }
 
 function sendChatMessage(rawMessage) {
@@ -1214,16 +1258,20 @@ function sendChatMessage(rawMessage) {
   addChatMessage({ role: "user", text: message });
   chatState.isTyping = true;
   renderChatHistory();
+  resetChatbotInactivityTimer();
 
   const reply = getChatReply(message, currentLanguage);
 
   window.setTimeout(() => {
     chatState.isTyping = false;
+    chatState.suggestionsExpanded = false;
+    syncChatSuggestionsState();
     addChatMessage({
       role: "bot",
       text: reply.text,
       actionLabel: reply.actionLabel,
     });
+    resetChatbotInactivityTimer();
   }, 520);
 }
 
@@ -1237,6 +1285,40 @@ chatbotOpenButton?.addEventListener("click", () => {
 });
 
 chatbotCloseButton?.addEventListener("click", closeChatbot);
+
+document.addEventListener("click", (event) => {
+  if (!chatbotShell?.classList.contains("is-open")) {
+    return;
+  }
+
+  if (chatbotShell.contains(event.target)) {
+    return;
+  }
+
+  closeChatbot();
+});
+
+chatbotShell?.addEventListener("pointerdown", resetChatbotInactivityTimer);
+chatbotShell?.addEventListener("focusin", resetChatbotInactivityTimer);
+chatbotShell?.addEventListener("input", resetChatbotInactivityTimer);
+chatbotShell?.addEventListener("keydown", resetChatbotInactivityTimer);
+
+chatbotSuggestions?.addEventListener("mouseenter", () => {
+  resetChatbotInactivityTimer();
+  setChatSuggestionsExpanded(true);
+});
+
+chatbotSuggestions?.addEventListener("mouseleave", () => {
+  setChatSuggestionsExpanded(false);
+});
+
+chatbotInput?.addEventListener("pointerdown", () => {
+  setChatSuggestionsExpanded(true);
+});
+
+chatbotInput?.addEventListener("blur", () => {
+  setChatSuggestionsExpanded(false);
+});
 
 chatbotForm?.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -1252,6 +1334,8 @@ chatbotForm?.addEventListener("submit", (event) => {
     chatbotInput.value = "";
   }
 });
+
+window.addEventListener("beforeunload", clearChatbotInactivityTimer);
 
 const onScroll = () => {
   topbar?.classList.toggle("is-scrolled", window.scrollY > 16);
