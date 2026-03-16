@@ -1,4 +1,9 @@
+import { inject } from "@vercel/analytics";
 import "./styles.css";
+
+inject({
+  mode: import.meta.env.PROD ? "production" : "development",
+});
 
 const translations = {
   en: {
