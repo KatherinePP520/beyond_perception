@@ -1,0 +1,521 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Automation Services for Small Business | Beyond Perception</title>
+    <meta name="description" content="Custom AI automation services for small and medium businesses. Automate approvals, workflows, reviews, and repetitive tasks. Reduce manual work by 68%. Book a demo." />
+    <meta name="keywords" content="AI automation services, small business automation, workflow automation, automate approvals, AI for SMB, business process automation, custom AI solutions" />
+    <link rel="canonical" href="https://www.beyondperceptiontech.com/ai-automation.html" />
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AI Automation Services | Beyond Perception" />
+    <meta property="og:description" content="Custom AI automation for approvals, workflows, reviews, and operational tasks. Built for small and medium businesses." />
+    <meta property="og:url" content="https://www.beyondperceptiontech.com/ai-automation.html" />
+    <meta property="og:image" content="https://www.beyondperceptiontech.com/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./assets/favion.png" />
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Service",
+                "@id": "https://www.beyondperceptiontech.com/ai-automation.html#service",
+                "name": "AI Automation Services for Small Business",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Beyond Perception",
+                    "url": "https://www.beyondperceptiontech.com"
+                },
+                "serviceType": "AI Workflow Automation",
+                "areaServed": { "@type": "Country", "name": "Australia" },
+                "description": "Custom AI automation services that eliminate repetitive tasks, streamline approvals, and improve operational efficiency for small and medium businesses.",
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "AI Automation Solutions",
+                    "itemListElement": [
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Approval Workflow Automation" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Review Collection System" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business Dashboard Automation" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Follow-up Workflow Automation" } }
+                    ]
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What business tasks can AI automation handle?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "AI automation can handle approvals, review requests, report generation, data entry, customer follow-ups, invoice processing, appointment scheduling, inventory updates, and internal notifications." }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How much does AI automation cost for small business?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Simple automation workflows start from AUD $3,000-5,000. Comprehensive systems with multiple integrations typically range from AUD $8,000-20,000 depending on complexity." }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How long to implement AI automation?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Most small business automation projects deploy within 3-6 weeks including discovery, development, testing, and training." }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+    <style>
+        :root {
+            --bg: #04070d;
+            --bg-soft: #09121d;
+            --text: #f3f7ff;
+            --muted: #9ba8c1;
+            --cyan: #76d4ff;
+            --blue: #4d7dff;
+            --max: 1240px;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: "Manrope", sans-serif;
+            background:
+            radial-gradient(circle at top, rgba(77, 125, 255, 0.14), transparent 26%),
+            radial-gradient(circle at 80% 20%, rgba(118, 212, 255, 0.12), transparent 22%),
+            linear-gradient(180deg, #03060b 0%, #050a12 38%, #07111e 100%);
+            color: var(--text);
+            min-height: 100vh;
+            line-height: 1.7;
+        }
+        .site-shell {
+            position: relative;
+            isolation: isolate;
+        }
+        .ambient,
+        .scanline,
+        .particle-field {
+            pointer-events: none;
+            position: fixed;
+            inset: 0;
+        }
+        .particle-field {
+            z-index: -5;
+            opacity: 0.8;
+        }
+        .ambient {
+            z-index: -6;
+            filter: blur(90px);
+        }
+        .ambient-a {
+            background: radial-gradient(circle, rgba(49, 105, 255, 0.18) 0%, transparent 62%);
+            transform: translate(-18%, -20%);
+        }
+        .ambient-b {
+            background: radial-gradient(circle, rgba(118, 212, 255, 0.16) 0%, transparent 65%);
+            transform: translate(42%, 10%);
+        }
+        .scanline {
+            z-index: -4;
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0, transparent 40%),
+                repeating-linear-gradient(
+                    180deg,
+                    rgba(255, 255, 255, 0.02) 0,
+                    rgba(255, 255, 255, 0.02) 1px,
+                    transparent 1px,
+                    transparent 4px
+                );
+            opacity: 0.2;
+        }
+        a { color: inherit; text-decoration: none; }
+        .container { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+        .topbar {
+            position: sticky; top: 0; z-index: 100;
+            background: rgba(4, 7, 13, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(121, 155, 206, 0.18);
+            padding: 16px 0;
+        }
+                .topbar .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 16px;
+        }
+        .topbar a { margin-right: 0; color: var(--muted); }
+        .topbar a:hover { color: var(--cyan); }
+        .language-switch {
+            margin-left: auto;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px;
+            border-radius: 999px;
+            border: 1px solid rgba(118, 212, 255, 0.2);
+            background: rgba(8, 14, 23, 0.52);
+        }
+        .language-pill {
+            border: none;
+            border-radius: 999px;
+            padding: 6px 12px;
+            font-size: 12px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--muted);
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .language-pill:hover {
+            color: var(--text);
+        }
+        .language-pill.is-active {
+            background: linear-gradient(135deg, rgba(118, 212, 255, 0.26), rgba(77, 125, 255, 0.3));
+            color: var(--text);
+            box-shadow: 0 0 0 1px rgba(118, 212, 255, 0.24);
+        }
+        .hero { padding: 120px 0 80px; }
+        .hero h1 { font-size: clamp(32px, 5vw, 56px); margin: 0 0 24px; line-height: 1.1; }
+        .hero p { font-size: clamp(18px, 2vw, 22px); color: var(--muted); max-width: 700px; margin: 0 0 40px; }
+        .eyebrow { color: var(--cyan); text-transform: uppercase; letter-spacing: 2px; font-size: 14px; font-weight: 600; margin-bottom: 16px; }
+        .btn {
+            display: inline-block;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--blue), var(--cyan));
+            color: #fff;
+        }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(77, 125, 255, 0.4); }
+        .section { padding: 100px 0; }
+        .section h2 { font-size: clamp(28px, 4vw, 42px); margin: 0 0 40px; }
+        .grid { display: grid; gap: 32px; }
+        .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+        .grid-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+        .card {
+            background: rgba(11, 18, 31, 0.6);
+            border: 1px solid rgba(121, 155, 206, 0.18);
+            border-radius: 20px;
+            padding: 32px;
+            transition: all 0.3s;
+        }
+        .card:hover { border-color: var(--cyan); transform: translateY(-4px); }
+        .card h3 { margin: 0 0 12px; font-size: 22px; }
+        .card p { color: var(--muted); margin: 0; }
+        .metric { font-size: 48px; font-weight: 800; color: var(--cyan); line-height: 1; }
+        .metric-label { color: var(--muted); font-size: 14px; margin-top: 8px; }
+        .faq-item { margin-bottom: 24px; }
+        .faq-item h3 { margin: 0 0 12px; font-size: 18px; }
+        .faq-item p { color: var(--muted); margin: 0; }
+        .cta-section {
+            background: linear-gradient(135deg, rgba(77, 125, 255, 0.2), rgba(118, 212, 255, 0.1));
+            border-radius: 24px;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        footer {
+            border-top: 1px solid rgba(121, 155, 206, 0.18);
+            padding: 60px 0;
+            margin-top: 100px;
+        }
+        footer p { color: var(--muted); }
+    </style>
+  <link rel="stylesheet" href="/topbar.css?v=20260323" />
+</head>
+<body>
+    <div class="site-shell">
+        <div class="ambient ambient-a" aria-hidden="true"></div>
+        <div class="ambient ambient-b" aria-hidden="true"></div>
+        <div class="scanline" aria-hidden="true"></div>
+        <canvas class="particle-field" aria-hidden="true"></canvas>
+                    <header class="topbar" data-topbar>
+      <a class="brand" href="/#hero" aria-label="Beyond Perception Home">
+        <img class="brand-logo" src="/assets/beyond-perception-logo-white.png" alt="Beyond Perception - Custom AI Automation and IT Services Logo" />
+        <span class="sr-only">Beyond Perception</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-label="Open menu"
+        data-menu-toggle
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" data-nav>
+        <a href="/#solutions">Solutions</a>
+        <a href="/#services">Services</a>
+        <a href="/#industries">Industries</a>
+        <a href="/#work">Work</a>
+        <a href="/#about">About</a>
+        <a href="/blog/index.html">Blog</a>
+        <a href="/#contact">Contact</a>
+        <div class="language-switch" role="group" aria-label="Language switcher">
+          <button class="language-pill is-active" type="button" data-lang-toggle="en">EN</button>
+          <button class="language-pill" type="button" data-lang-toggle="zh">ZH</button>
+        </div>
+        <a class="button button-ghost nav-button" href="/#contact">Book a Demo</a>
+      </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <p class="eyebrow">AI Automation Services</p>
+                <h1>Eliminate Repetitive Work with Custom AI Automation</h1>
+                <p>We build intelligent automation systems that handle approvals, workflows, reviews, and operational tasks鈥攆reeing your team to focus on what matters.</p>
+                <a href="#contact" class="btn btn-primary">Book a Demo</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-3">
+                    <div class="card">
+                        <div class="metric">68%</div>
+                        <div class="metric-label">Workflow Time Saved</div>
+                    </div>
+                    <div class="card">
+                        <div class="metric">24+</div>
+                        <div class="metric-label">Connected Platforms</div>
+                    </div>
+                    <div class="card">
+                        <div class="metric">4-6</div>
+                        <div class="metric-label">Weeks to Launch</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <p class="eyebrow">What We Automate</p>
+                <h2>Business Tasks Perfect for AI Automation</h2>
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h3>Approval Workflows</h3>
+                        <p>Automate leave requests, budget approvals, onboarding sign-offs, and operational sign-offs with rules-based routing and escalation.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Review Collection</h3>
+                        <p>Automated review requests with sentiment analysis. Low ratings route internally for recovery before public posting.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Follow-up Sequences</h3>
+                        <p>Smart follow-up workflows for leads, customers, and internal tasks. Never let important items slip through cracks.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Reporting & Dashboards</h3>
+                        <p>Auto-generated reports, live dashboards, and data consolidation from multiple platforms into single views.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Data Entry & Processing</h3>
+                        <p>Eliminate manual data entry. Auto-populate fields, validate information, and sync data across systems.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Customer Communication</h3>
+                        <p>Automated messaging for confirmations, reminders, status updates, and post-service follow-ups.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <p class="eyebrow">Industries We Serve</p>
+                <h2>Built for Growing Businesses</h2>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <h3>Professional Services</h3>
+                        <p>Intake workflows, approval chains, client reporting, and delivery tracking automation.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Retail</h3>
+                        <p>Order handling, review systems, inventory notifications, and customer support automation.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Healthcare</h3>
+                        <p>Administrative workflows, bookings, reminders, forms, and internal coordination.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Hospitality</h3>
+                        <p>Guest communication, service recovery, scheduling, and operational handoffs.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Logistics</h3>
+                        <p>Movement tracking, request routing, milestone alerts, and exception handling.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Education</h3>
+                        <p>Enrollment, reminders, status updates, and staff portal automation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <p class="eyebrow">Related Services</p>
+                <h2>Explore More Solutions</h2>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <h3>Custom Software Development</h3>
+                        <p>Tailored CRM, HR systems, dashboards, and portals built around your business processes.</p>
+              <a href="./custom-software.html" style="color: var(--cyan); margin-top: 12px; display: inline-block;">Learn more &rarr;</a>
+                    </div>
+                    <div class="card">
+                        <h3>Business IT Services</h3>
+                        <p>Platform integration, data consolidation, and workflow optimization for cohesive operations.</p>
+              <a href="./business-it-services.html" style="color: var(--cyan); margin-top: 12px; display: inline-block;">Learn more &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <p class="eyebrow">FAQ</p>
+                <h2>Frequently Asked Questions</h2>
+                <div class="grid">
+                    <div class="faq-item">
+                        <h3>What business tasks can AI automation handle?</h3>
+                        <p>AI automation can handle approvals, review requests, report generation, data entry, customer follow-ups, invoice processing, appointment scheduling, inventory updates, and internal notifications.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How much does AI automation cost for small business?</h3>
+                        <p>Simple automation workflows start from AUD $3,000-5,000. Comprehensive systems with multiple integrations typically range from AUD $8,000-20,000 depending on complexity.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How long to implement AI automation?</h3>
+                        <p>Most small business automation projects deploy within 3-6 weeks including discovery, development, testing, and training.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can you integrate with our existing software?</h3>
+                        <p>Yes. We integrate with popular business software including CRM, project management, communication, and accounting systems like Salesforce, HubSpot, Slack, Xero, and more.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="cta-section">
+                    <p class="eyebrow">Start the Conversation</p>
+                    <h2>Ready to Automate Smarter?</h2>
+                    <p style="color: var(--muted); max-width: 500px; margin: 0 auto 32px;">Tell us about your workflows. We'll identify what can be automated and provide a tailored quote.</p>
+                    <a href="mailto:katherine@beyondperceptiontech.com" class="btn btn-primary">Book a Consultation</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Beyond Perception. Custom AI Automation & IT Services.</p>
+            <p><a href="/">Home</a> | <a href="/#services">Services</a> | <a href="/#contact">Contact</a></p>
+        </div>
+    </footer>
+    </div>
+    <script>
+        (() => {
+            const canvas = document.querySelector(".particle-field");
+            if (!canvas) {
+                return;
+            }
+
+            const context = canvas.getContext("2d");
+            if (!context) {
+                return;
+            }
+
+            if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+                return;
+            }
+
+            let width = 0;
+            let height = 0;
+            let animationFrame = 0;
+            let particles = [];
+
+            const resize = () => {
+                width = window.innerWidth;
+                height = window.innerHeight;
+                canvas.width = width * window.devicePixelRatio;
+                canvas.height = height * window.devicePixelRatio;
+                canvas.style.width = `${width}px`;
+                canvas.style.height = `${height}px`;
+                context.setTransform(window.devicePixelRatio, 0, 0, window.devicePixelRatio, 0, 0);
+
+                const count = Math.max(28, Math.floor(width / 52));
+                particles = Array.from({ length: count }, () => ({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    vx: (Math.random() - 0.5) * 0.18,
+                    vy: (Math.random() - 0.5) * 0.18,
+                    size: Math.random() * 1.8 + 0.6,
+                }));
+            };
+
+            const draw = () => {
+                context.clearRect(0, 0, width, height);
+
+                particles.forEach((particle) => {
+                    particle.x += particle.vx;
+                    particle.y += particle.vy;
+
+                    if (particle.x < 0 || particle.x > width) {
+                        particle.vx *= -1;
+                    }
+
+                    if (particle.y < 0 || particle.y > height) {
+                        particle.vy *= -1;
+                    }
+
+                    context.beginPath();
+                    context.fillStyle = "rgba(114, 208, 255, 0.42)";
+                    context.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+                    context.fill();
+                });
+
+                for (let index = 0; index < particles.length; index += 1) {
+                    for (let inner = index + 1; inner < particles.length; inner += 1) {
+                        const a = particles[index];
+                        const b = particles[inner];
+                        const distance = Math.hypot(a.x - b.x, a.y - b.y);
+
+                        if (distance > 120) {
+                            continue;
+                        }
+
+                        context.beginPath();
+                        context.strokeStyle = `rgba(94, 170, 255, ${0.1 - distance / 1400})`;
+                        context.lineWidth = 1;
+                        context.moveTo(a.x, a.y);
+                        context.lineTo(b.x, b.y);
+                        context.stroke();
+                    }
+                }
+
+                animationFrame = window.requestAnimationFrame(draw);
+            };
+
+            resize();
+            draw();
+
+            window.addEventListener("resize", resize);
+            window.addEventListener("beforeunload", () => window.cancelAnimationFrame(animationFrame), { once: true });
+        })();
+    </script>
+    <script src="/topbar.js" defer></script>
+  <script src="/language-switch.js" defer></script>
+</body>
+</html>
+

@@ -1,5 +1,4 @@
 import { inject } from "@vercel/analytics";
-import "./styles.css";
 
 inject({
   mode: import.meta.env.PROD ? "production" : "development",
@@ -8,7 +7,7 @@ inject({
 const translations = {
   en: {
     meta: {
-      title: "Beyond Perception | Custom AI Automation, Software Development & IT Services",
+      title: "Beyond Perception | Custom AI Automation & IT Services",
       description:
         "Beyond Perception provides custom AI automation, tailored software development, workflow integration, and IT services for businesses that need smarter operations.",
       keywords:
@@ -293,14 +292,17 @@ const translations = {
         automation: {
           title: "AI Automation Services",
           body: "We design AI automation for approvals, routing, follow-up, review requests, reporting, and repetitive operational tasks.",
+          cta: "Learn more →",
         },
         software: {
           title: "Custom Software Development",
           body: "We build tailored internal tools, web apps, dashboards, and portals that match the way your company actually works.",
+          cta: "Learn more →",
         },
         it: {
           title: "Business IT Services",
           body: "We connect platforms, structure data, and improve operational visibility so teams can run cleaner systems with fewer manual gaps.",
+          cta: "Learn more →",
         },
         custom: {
           title: "Customized AI Systems",
@@ -324,6 +326,26 @@ const translations = {
         three: {
           question: "Who uses Beyond Perception's AI and IT services?",
           answer: "Growing companies across professional services, retail, healthcare, hospitality, logistics, and education use Beyond Perception when off-the-shelf tools no longer fit their workflows.",
+        },
+        four: {
+          question: "How much does custom AI automation cost?",
+          answer: "AI automation costs vary based on complexity and scope. Simple workflow automation starts from a few thousand dollars, while comprehensive business systems range higher. Contact us for a tailored quote based on your requirements.",
+        },
+        five: {
+          question: "How long does it take to build a custom AI solution?",
+          answer: "Most AI automation projects launch within 4-8 weeks. Simple integrations can be deployed in 2-3 weeks, while complex multi-system workflows may take 8-12 weeks from discovery to rollout.",
+        },
+        six: {
+          question: "Can AI automation integrate with our existing software?",
+          answer: "Yes. Beyond Perception specializes in connecting existing platforms and consolidating data across tools. We integrate with popular business software including CRM, project management, communication, and accounting systems.",
+        },
+        seven: {
+          question: "What industries benefit most from AI workflow automation?",
+          answer: "Professional services, retail, healthcare, hospitality, logistics, and education see significant ROI from automation. Any industry with repetitive admin tasks, approval chains, or customer communication workflows can benefit.",
+        },
+        eight: {
+          question: "Do I need technical expertise to use your AI systems?",
+          answer: "No. Beyond Perception builds user-friendly systems designed for business teams, not engineers. We provide training and support to ensure smooth adoption across your organization.",
         },
       },
     },
@@ -622,6 +644,71 @@ const translations = {
         },
       },
     },
+    seo: {
+      eyebrow: "定制化 AI 与企业 IT 服务",
+      title: "自动化、定制化、AI 与 IT 服务的中文说明",
+      body: "Beyond Perception 为成长型企业提供定制 AI 自动化、定制软件开发、流程集成与务实 IT 服务，帮助团队提升效率与运营清晰度。",
+      cards: {
+        automation: {
+          title: "AI 自动化服务",
+          body: "我们围绕审批、路由、跟进、评价请求、报表与重复性运营任务设计 AI 自动化系统。",
+          cta: "了解更多 →",
+        },
+        software: {
+          title: "定制软件开发",
+          body: "根据企业真实流程构建内部工具、Web 应用、仪表盘与门户系统，而不是强行套用模板。",
+          cta: "了解更多 →",
+        },
+        it: {
+          title: "企业 IT 服务",
+          body: "打通平台、整合数据、提升运营可视化，让团队在更少手工操作下保持高效协同。",
+          cta: "了解更多 →",
+        },
+        custom: {
+          title: "定制化 AI 系统",
+          body: "每套 Beyond Perception 方案都围绕你的业务规则、集成关系与审批逻辑进行定制。",
+        },
+      },
+    },
+    faq: {
+      eyebrow: "SEO \u5e38\u89c1\u95ee\u9898",
+      title: "\u628a Beyond Perception \u4e0e AI \u548c IT \u670d\u52a1\u5173\u8054\u8d77\u6765\u7684\u95ee\u9898\u3002",
+      body: "\u4ee5\u4e0b\u56de\u7b54\u805a\u7126 Beyond Perception \u63d0\u4f9b\u7684\u6838\u5fc3\u80fd\u529b\uff1a\u5b9a\u5236 AI \u81ea\u52a8\u5316\u3001\u5b9a\u5236\u8f6f\u4ef6\u5f00\u53d1\u4e0e\u4f01\u4e1a IT \u670d\u52a1\u3002",
+      items: {
+        one: {
+          question: "Beyond Perception \u63d0\u4f9b\u54ea\u4e9b AI \u81ea\u52a8\u5316\u670d\u52a1\uff1f",
+          answer: "Beyond Perception \u53ef\u4ee5\u4e3a\u4f60\u5b9a\u5236\u5ba1\u6279\u6d41\u3001\u8bc4\u4ef7\u9080\u8bf7\u3001\u4eea\u8868\u76d8\u3001\u62a5\u8868\u751f\u6210\u3001\u95e8\u6237\u7cfb\u7edf\u3001\u540e\u7eed\u8ddf\u8fdb\u4e0e\u5185\u90e8\u8fd0\u8425\u6d41\u7a0b\u7684 AI \u81ea\u52a8\u5316\u3002",
+        },
+        two: {
+          question: "Beyond Perception \u4f1a\u540c\u65f6\u505a\u5b9a\u5236\u8f6f\u4ef6\u548c\u4f01\u4e1a IT \u7cfb\u7edf\u5417\uff1f",
+          answer: "\u4f1a\u3002\u6211\u4eec\u56f4\u7ed5\u4f01\u4e1a\u771f\u5b9e\u6d41\u7a0b\u642d\u5efa\u5185\u90e8\u7cfb\u7edf\u3001\u5de5\u4f5c\u6d41\u3001\u5458\u5de5/\u5ba2\u6237\u95e8\u6237\u3001\u7ba1\u7406\u770b\u677f\u548c\u96c6\u6210\u5de5\u5177\uff0c\u800c\u4e0d\u662f\u628a\u901a\u7528\u8f6f\u4ef6\u5f3a\u884c\u5957\u5728\u4f60\u7684\u6d41\u7a0b\u4e0a\u3002",
+        },
+        three: {
+          question: "\u54ea\u4e9b\u4f01\u4e1a\u9002\u5408 Beyond Perception \u7684 AI \u548c IT \u670d\u52a1\uff1f",
+          answer: "\u4e13\u4e1a\u670d\u52a1\u3001\u96f6\u552e\u3001\u533b\u7597\u3001\u9152\u5e97\u4e0e\u670d\u52a1\u4e1a\u3001\u7269\u6d41\u3001\u6559\u80b2\u7b49\u589e\u957f\u578b\u4f01\u4e1a\uff0c\u5f53\u73b0\u6210\u5de5\u5177\u5df2\u65e0\u6cd5\u9002\u914d\u6d41\u7a0b\u65f6\uff0c\u5c31\u975e\u5e38\u9002\u5408\u5b9a\u5236\u5316\u65b9\u6848\u3002",
+        },
+        four: {
+          question: "\u5b9a\u5236 AI \u81ea\u52a8\u5316\u6210\u672c\u5927\u6982\u662f\u591a\u5c11\uff1f",
+          answer: "\u6210\u672c\u53d6\u51b3\u4e8e\u6d41\u7a0b\u590d\u6742\u5ea6\u548c\u8303\u56f4\u3002\u7b80\u5355\u573a\u666f\u901a\u5e38\u4ece\u6570\u5343\u6fb3\u5143\u8d77\uff0c\u6d89\u53ca\u591a\u7cfb\u7edf\u7684\u7efc\u5408\u9879\u76ee\u4f1a\u66f4\u9ad8\u3002\u6211\u4eec\u4f1a\u6839\u636e\u4f60\u7684\u9700\u6c42\u7ed9\u51fa\u5bf9\u5e94\u62a5\u4ef7\u3002",
+        },
+        five: {
+          question: "\u5f00\u53d1\u4e00\u5957\u5b9a\u5236 AI \u89e3\u51b3\u65b9\u6848\u8981\u591a\u4e45\uff1f",
+          answer: "\u5927\u591a\u6570\u81ea\u52a8\u5316\u9879\u76ee\u53ef\u5728 4-8 \u5468\u4e0a\u7ebf\u9996\u7248\u3002\u8f83\u7b80\u5355\u7684\u96c6\u6210\u7ea6 2-3 \u5468\uff0c\u8de8\u591a\u7cfb\u7edf\u590d\u6742\u6d41\u7a0b\u901a\u5e38\u9700\u8981 8-12 \u5468\u3002",
+        },
+        six: {
+          question: "AI \u81ea\u52a8\u5316\u80fd\u5bf9\u63a5\u6211\u4eec\u5df2\u6709\u8f6f\u4ef6\u5417\uff1f",
+          answer: "\u53ef\u4ee5\u3002Beyond Perception \u64c5\u957f\u6253\u901a\u65e2\u6709\u5e73\u53f0\u5e76\u7edf\u4e00\u6570\u636e\uff0c\u53ef\u4e0e CRM\u3001\u9879\u76ee\u7ba1\u7406\u3001\u534f\u4f5c\u6c9f\u901a\u548c\u8d22\u52a1\u7cfb\u7edf\u7b49\u5e38\u89c1\u5de5\u5177\u96c6\u6210\u3002",
+        },
+        seven: {
+          question: "\u54ea\u4e9b\u884c\u4e1a\u66f4\u5bb9\u6613\u4ece AI \u5de5\u4f5c\u6d41\u81ea\u52a8\u5316\u83b7\u5f97\u56de\u62a5\uff1f",
+          answer: "\u4e13\u4e1a\u670d\u52a1\u3001\u96f6\u552e\u3001\u533b\u7597\u3001\u9152\u5e97\u3001\u7269\u6d41\u548c\u6559\u80b2\u90fd\u6709\u660e\u663e ROI\u3002\u53ea\u8981\u5b58\u5728\u9ad8\u9891\u91cd\u590d\u884c\u653f\u4efb\u52a1\u3001\u5ba1\u6279\u94fe\u8def\u6216\u5ba2\u6237\u6c9f\u901a\u6d41\u7a0b\uff0c\u90fd\u9002\u5408\u81ea\u52a8\u5316\u3002",
+        },
+        eight: {
+          question: "\u4f7f\u7528\u4f60\u4eec\u7684 AI \u7cfb\u7edf\u9700\u8981\u6280\u672f\u80cc\u666f\u5417\uff1f",
+          answer: "\u4e0d\u9700\u8981\u3002\u6211\u4eec\u7684\u7cfb\u7edf\u662f\u6309\u4e1a\u52a1\u56e2\u961f\u65e5\u5e38\u4f7f\u7528\u8bbe\u8ba1\u7684\uff0c\u4f1a\u63d0\u4f9b\u4e0a\u624b\u57f9\u8bad\u4e0e\u540e\u7eed\u652f\u6301\uff0c\u786e\u4fdd\u843d\u5730\u987a\u7545\u3002",
+        },
+      },
+    },
     manifesto: {
       eyebrow: "品牌主张",
       title: "Beyond Perception，不止于人工，不止于基础自动化。",
@@ -900,6 +987,7 @@ const counters = [...document.querySelectorAll("[data-counter]")];
 const tabs = [...document.querySelectorAll(".system-tab")];
 const panes = [...document.querySelectorAll(".system-pane")];
 const langButtons = [...document.querySelectorAll("[data-lang-toggle]")];
+const localizedLinks = [...document.querySelectorAll("[data-lang-path]")];
 const translatableNodes = [...document.querySelectorAll("[data-i18n]")];
 const translatableAttrs = [...document.querySelectorAll("[data-i18n-attr]")];
 const descriptionMeta = document.querySelector('meta[name="description"]');
@@ -926,6 +1014,25 @@ let chatbotInactivityTimer = 0;
 
 const getValue = (source, path) =>
   path.split(".").reduce((value, key) => (value && key in value ? value[key] : undefined), source);
+
+const localizedPathMap = {
+  "/ai-automation.html": "/zh/ai-automation.html",
+  "/business-it-services.html": "/zh/business-it-services.html",
+  "/custom-software.html": "/zh/custom-software.html",
+  "/blog/index.html": "/zh/blog/index.html",
+};
+
+const syncLocalizedLinks = (lang) => {
+  localizedLinks.forEach((link) => {
+    const basePath = link.dataset.langPath;
+    if (!basePath) {
+      return;
+    }
+
+    const localizedPath = localizedPathMap[basePath];
+    link.setAttribute("href", lang === "zh" && localizedPath ? localizedPath : basePath);
+  });
+};
 
 const applyLanguage = (lang) => {
   const locale = translations[lang] ?? translations.en;
@@ -967,6 +1074,7 @@ const applyLanguage = (lang) => {
     button.setAttribute("aria-pressed", String(active));
   });
 
+  syncLocalizedLinks(lang);
   currentLanguage = lang;
   syncChatbotUI();
   window.localStorage.setItem("bp-language", lang);

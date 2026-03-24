@@ -1,0 +1,384 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Beyond Perception - AI Automation & Business Technology Insights</title>
+    <meta name="description" content="Insights on AI automation, business process optimization, custom software development, and digital transformation for small and medium businesses." />
+    <meta name="keywords" content="AI automation blog, business technology, digital transformation, SMB automation, workflow optimization" />
+    <link rel="canonical" href="https://www.beyondperceptiontech.com/blog/" />
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Blog | Beyond Perception" />
+    <meta property="og:description" content="Insights on AI automation, business process optimization, and digital transformation." />
+    <meta property="og:url" content="https://www.beyondperceptiontech.com/blog/" />
+    <meta property="og:image" content="https://www.beyondperceptiontech.com/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Blog",
+                "@id": "https://www.beyondperceptiontech.com/blog/#blog",
+                "name": "Beyond Perception Blog",
+                "description": "Insights on AI automation, business process optimization, custom software development, and digital transformation.",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Beyond Perception",
+                    "url": "https://www.beyondperceptiontech.com"
+                }
+            },
+            {
+                "@type": "CollectionPage",
+                "@id": "https://www.beyondperceptiontech.com/blog/#webpage",
+                "url": "https://www.beyondperceptiontech.com/blog/"
+            }
+        ]
+    }
+    </script>
+    <style>
+        :root { --bg: #04070d; --bg-soft: #09121d; --text: #f3f7ff; --muted: #9ba8c1; --cyan: #76d4ff; --blue: #4d7dff; --max: 1240px; }
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: "Manrope", sans-serif; background:
+            radial-gradient(circle at top, rgba(77, 125, 255, 0.14), transparent 26%),
+            radial-gradient(circle at 80% 20%, rgba(118, 212, 255, 0.12), transparent 22%),
+            linear-gradient(180deg, #03060b 0%, #050a12 38%, #07111e 100%); color: var(--text); min-height: 100vh; line-height: 1.7; }
+        .site-shell {
+            position: relative;
+            isolation: isolate;
+        }
+        .ambient,
+        .scanline,
+        .particle-field {
+            pointer-events: none;
+            position: fixed;
+            inset: 0;
+        }
+        .particle-field {
+            z-index: -5;
+            opacity: 0.8;
+        }
+        .ambient {
+            z-index: -6;
+            filter: blur(90px);
+        }
+        .ambient-a {
+            background: radial-gradient(circle, rgba(49, 105, 255, 0.18) 0%, transparent 62%);
+            transform: translate(-18%, -20%);
+        }
+        .ambient-b {
+            background: radial-gradient(circle, rgba(118, 212, 255, 0.16) 0%, transparent 65%);
+            transform: translate(42%, 10%);
+        }
+        .scanline {
+            z-index: -4;
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0, transparent 40%),
+                repeating-linear-gradient(
+                    180deg,
+                    rgba(255, 255, 255, 0.02) 0,
+                    rgba(255, 255, 255, 0.02) 1px,
+                    transparent 1px,
+                    transparent 4px
+                );
+            opacity: 0.2;
+        }
+        a { color: inherit; text-decoration: none; }
+        .container { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+        .topbar { position: sticky; top: 0; z-index: 100; background: rgba(4, 7, 13, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(121, 155, 206, 0.18); padding: 16px 0; }
+                .topbar .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 16px;
+        }
+        .topbar a { margin-right: 0; color: var(--muted); }
+        .topbar a:hover { color: var(--cyan); }
+        .language-switch {
+            margin-left: auto;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px;
+            border-radius: 999px;
+            border: 1px solid rgba(118, 212, 255, 0.2);
+            background: rgba(8, 14, 23, 0.52);
+        }
+        .language-pill {
+            border: none;
+            border-radius: 999px;
+            padding: 6px 12px;
+            font-size: 12px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--muted);
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .language-pill:hover {
+            color: var(--text);
+        }
+        .language-pill.is-active {
+            background: linear-gradient(135deg, rgba(118, 212, 255, 0.26), rgba(77, 125, 255, 0.3));
+            color: var(--text);
+            box-shadow: 0 0 0 1px rgba(118, 212, 255, 0.24);
+        }
+        .hero { padding: 120px 0 60px; }
+        .hero h1 { font-size: clamp(32px, 5vw, 56px); margin: 0 0 16px; line-height: 1.1; }
+        .hero p { font-size: clamp(18px, 2vw, 22px); color: var(--muted); max-width: 700px; }
+        .eyebrow { color: var(--cyan); text-transform: uppercase; letter-spacing: 2px; font-size: 14px; font-weight: 600; margin-bottom: 16px; }
+        .section { padding: 80px 0; }
+        .grid { display: grid; gap: 32px; }
+        .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+        .grid-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+        .card { background: rgba(11, 18, 31, 0.6); border: 1px solid rgba(121, 155, 206, 0.18); border-radius: 20px; padding: 32px; transition: all 0.3s; }
+        .card:hover { border-color: var(--cyan); transform: translateY(-4px); }
+        .card a { display: block; }
+        .card h3 { margin: 16px 0 12px; font-size: 22px; }
+        .card h3 a:hover { color: var(--cyan); }
+        .card p { color: var(--muted); margin: 0; }
+        .card-meta { font-size: 14px; color: var(--muted); margin-bottom: 8px; }
+        .tag { display: inline-block; padding: 4px 12px; background: rgba(77, 125, 255, 0.2); border-radius: 20px; font-size: 12px; color: var(--cyan); margin-bottom: 12px; }
+        .pagination { display: flex; justify-content: center; gap: 16px; margin-top: 40px; }
+        .pagination a { padding: 12px 24px; border: 1px solid rgba(121, 155, 206, 0.18); border-radius: 8px; color: var(--muted); }
+        .pagination a:hover { border-color: var(--cyan); color: var(--text); }
+        footer { border-top: 1px solid rgba(121, 155, 206, 0.18); padding: 60px 0; margin-top: 80px; }
+        footer p { color: var(--muted); }
+    </style>
+  <link rel="stylesheet" href="/topbar.css?v=20260323" />
+</head>
+<body>
+    <div class="site-shell">
+        <div class="ambient ambient-a" aria-hidden="true"></div>
+        <div class="ambient ambient-b" aria-hidden="true"></div>
+        <div class="scanline" aria-hidden="true"></div>
+        <canvas class="particle-field" aria-hidden="true"></canvas>
+                    <header class="topbar" data-topbar>
+      <a class="brand" href="/#hero" aria-label="Beyond Perception Home">
+        <img class="brand-logo" src="/assets/beyond-perception-logo-white.png" alt="Beyond Perception - Custom AI Automation and IT Services Logo" />
+        <span class="sr-only">Beyond Perception</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-label="Open menu"
+        data-menu-toggle
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" data-nav>
+        <a href="/#solutions">Solutions</a>
+        <a href="/#services">Services</a>
+        <a href="/#industries">Industries</a>
+        <a href="/#work">Work</a>
+        <a href="/#about">About</a>
+        <a href="/blog/index.html">Blog</a>
+        <a href="/#contact">Contact</a>
+        <div class="language-switch" role="group" aria-label="Language switcher">
+          <button class="language-pill is-active" type="button" data-lang-toggle="en">EN</button>
+          <button class="language-pill" type="button" data-lang-toggle="zh">ZH</button>
+        </div>
+        <a class="button button-ghost nav-button" href="/#contact">Book a Demo</a>
+      </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <p class="eyebrow">Beyond Perception Blog</p>
+                <h1>Insights on AI Automation & Business Technology</h1>
+                <p>Practical guidance on automation, custom software, and digital transformation for growing businesses.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-3">
+                    <!-- Blog Post 1 -->
+                    <article class="card">
+                        <a href="./what-is-ai-automation.html">
+                            <span class="tag">AI Automation</span>
+                            <div class="card-meta">March 22, 2026 · 8 min read</div>
+                            <h3>What is AI Automation? A Complete Guide for SMBs</h3>
+                            <p>Learn how artificial intelligence is transforming business operations for small and medium businesses, and discover practical automation opportunities you can implement today.</p>
+                        </a>
+                    </article>
+                    <!-- Blog Post 2 -->
+                    <article class="card">
+                        <a href="./10-tasks-to-automate.html">
+                            <span class="tag">Workflow Automation</span>
+                            <div class="card-meta">March 20, 2026 · 6 min read</div>
+                            <h3>10 Business Tasks You Can Automate Today</h3>
+                            <p>From approvals to follow-ups, these high-impact workflows are the fastest way for SMBs to reduce manual work with automation.</p>
+                        </a>
+                    </article>
+                    <!-- Blog Post 3 -->
+                    <article class="card">
+                        <a href="./custom-vs-off-the-shelf.html">
+                            <span class="tag">Software Development</span>
+                            <div class="card-meta">March 18, 2026 · 7 min read</div>
+                            <h3>Custom Software vs Off-the-Shelf: Which is Right for Your Business?</h3>
+                            <p>A practical framework for deciding when packaged tools are enough and when custom software creates better long-term ROI.</p>
+                        </a>
+                    </article>
+                    <!-- Blog Post 4 -->
+                    <article class="card">
+                        <a href="./automation-roi-calculator.html">
+                            <span class="tag">Business Strategy</span>
+                            <div class="card-meta">March 15, 2026 · 5 min read</div>
+                            <h3>How to Calculate ROI on Automation Investments</h3>
+                            <p>Use a clear formula to estimate savings, payback period, and business impact before investing in workflow automation.</p>
+                        </a>
+                    </article>
+                    <!-- Blog Post 5 -->
+                    <article class="card">
+                        <a href="./healthcare-automation.html">
+                            <span class="tag">Healthcare</span>
+                            <div class="card-meta">March 12, 2026 · 6 min read</div>
+                            <h3>Healthcare Administration Automation: Opportunities and Best Practices</h3>
+                            <p>How clinics and healthcare teams reduce admin load through appointment, form, and communication automation while staying compliant.</p>
+                        </a>
+                    </article>
+                    <!-- Blog Post 6 -->
+                    <article class="card">
+                        <a href="./implementation-checklist.html">
+                            <span class="tag">Implementation</span>
+                            <div class="card-meta">March 10, 2026 · 8 min read</div>
+                            <h3>Automation Implementation Checklist: A Step-by-Step Guide</h3>
+                            <p>A practical checklist for planning, launching, and improving automation projects with less risk and faster results.</p>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="pagination">
+                    <a href="/blog/index.html">1</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="card" style="text-align: center; background: linear-gradient(135deg, rgba(77, 125, 255, 0.2), rgba(118, 212, 255, 0.1));">
+                    <p class="eyebrow">Subscribe</p>
+                    <h2 style="margin: 0 0 16px;">Get Insights Delivered</h2>
+                    <p style="color: var(--muted); max-width: 500px; margin: 0 auto 24px;">Join our newsletter for monthly insights on AI automation, business technology, and digital transformation.</p>
+                    <form action="#" method="POST" style="display: flex; gap: 12px; max-width: 400px; margin: 0 auto;">
+                        <input type="email" placeholder="Enter your email" style="flex: 1; padding: 12px 16px; border-radius: 8px; border: 1px solid rgba(121, 155, 206, 0.18); background: rgba(4, 7, 13, 0.6); color: var(--text);" />
+                        <button type="submit" style="padding: 12px 24px; border-radius: 8px; border: none; background: linear-gradient(135deg, var(--blue), var(--cyan)); color: #fff; font-weight: 600; cursor: pointer;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Beyond Perception. Custom AI Automation & IT Services.</p>
+            <p><a href="/">Home</a> | <a href="/#services">Services</a> | <a href="/blog/index.html">Blog</a> | <a href="/#contact">Contact</a></p>
+        </div>
+    </footer>
+    </div>
+    <script>
+        (() => {
+            const canvas = document.querySelector(".particle-field");
+            if (!canvas) {
+                return;
+            }
+
+            const context = canvas.getContext("2d");
+            if (!context) {
+                return;
+            }
+
+            if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+                return;
+            }
+
+            let width = 0;
+            let height = 0;
+            let animationFrame = 0;
+            let particles = [];
+
+            const resize = () => {
+                width = window.innerWidth;
+                height = window.innerHeight;
+                canvas.width = width * window.devicePixelRatio;
+                canvas.height = height * window.devicePixelRatio;
+                canvas.style.width = `${width}px`;
+                canvas.style.height = `${height}px`;
+                context.setTransform(window.devicePixelRatio, 0, 0, window.devicePixelRatio, 0, 0);
+
+                const count = Math.max(28, Math.floor(width / 52));
+                particles = Array.from({ length: count }, () => ({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    vx: (Math.random() - 0.5) * 0.18,
+                    vy: (Math.random() - 0.5) * 0.18,
+                    size: Math.random() * 1.8 + 0.6,
+                }));
+            };
+
+            const draw = () => {
+                context.clearRect(0, 0, width, height);
+
+                particles.forEach((particle) => {
+                    particle.x += particle.vx;
+                    particle.y += particle.vy;
+
+                    if (particle.x < 0 || particle.x > width) {
+                        particle.vx *= -1;
+                    }
+
+                    if (particle.y < 0 || particle.y > height) {
+                        particle.vy *= -1;
+                    }
+
+                    context.beginPath();
+                    context.fillStyle = "rgba(114, 208, 255, 0.42)";
+                    context.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+                    context.fill();
+                });
+
+                for (let index = 0; index < particles.length; index += 1) {
+                    for (let inner = index + 1; inner < particles.length; inner += 1) {
+                        const a = particles[index];
+                        const b = particles[inner];
+                        const distance = Math.hypot(a.x - b.x, a.y - b.y);
+
+                        if (distance > 120) {
+                            continue;
+                        }
+
+                        context.beginPath();
+                        context.strokeStyle = `rgba(94, 170, 255, ${0.1 - distance / 1400})`;
+                        context.lineWidth = 1;
+                        context.moveTo(a.x, a.y);
+                        context.lineTo(b.x, b.y);
+                        context.stroke();
+                    }
+                }
+
+                animationFrame = window.requestAnimationFrame(draw);
+            };
+
+            resize();
+            draw();
+
+            window.addEventListener("resize", resize);
+            window.addEventListener("beforeunload", () => window.cancelAnimationFrame(animationFrame), { once: true });
+        })();
+    </script>
+    <script src="/topbar.js" defer></script>
+  <script src="/language-switch.js" defer></script>
+</body>
+</html>
+
