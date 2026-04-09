@@ -32,7 +32,7 @@
 
   const getCounterpart = (normalizedPath, targetLang) => {
     if (targetLang === "zh") {
-      return routeMap[normalizedPath] || (normalizedPath === "/" ? "/" : `/zh${normalizedPath}`);
+      return routeMap[normalizedPath] || normalizedPath;
     }
 
     if (normalizedPath.startsWith("/zh/")) {
@@ -65,13 +65,9 @@
         return;
       }
 
-      let localizedPath = null;
-
-      if (normalizedPath === "/") {
-        localizedPath = "/zh/";
-      } else if (Object.prototype.hasOwnProperty.call(routeMap, normalizedPath)) {
-        localizedPath = routeMap[normalizedPath];
-      }
+      const localizedPath = Object.prototype.hasOwnProperty.call(routeMap, normalizedPath)
+        ? routeMap[normalizedPath]
+        : null;
 
       if (!localizedPath) {
         return;
@@ -103,6 +99,7 @@
       }
 
       try {
+        window.localStorage.setItem("bp-language", lang);
         window.localStorage.setItem("bp-lang", lang);
       } catch (_error) {
         // no-op
